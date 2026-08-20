@@ -1,0 +1,311 @@
+/**
+ * Lantern Design System — CSS Custom Properties
+ * lantern.care / Lantern Specialty Care
+ * 
+ * Fonts: Poppins (headlines), DM Sans (body) — Google Fonts
+ * Note: Aptos is a Microsoft system font used in Office; not available on web.
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap');
+
+/* ─────────────────────────────────────────────
+   BASE COLOR TOKENS
+───────────────────────────────────────────── */
+:root {
+  /* Brand Colors */
+  --color-green:        #005042;
+  --color-green-dark:   #003a30;
+  --color-green-light:  #006b57;
+  --color-green-tint:   #e8f5f2;
+
+  --color-cream:        #FEF8E8;
+  --color-cream-dark:   #f5ead2;
+  --color-cream-darker: #e8d8b8;
+
+  --color-espresso:     #311E04;
+  --color-espresso-mid: #5c3a10;
+  --color-espresso-light: #8a6040;
+
+  --color-pink:         #E45F95;
+  --color-pink-light:   #f09abf;
+  --color-pink-dark:    #c43d76;
+
+  --color-coral:        #FF6947;
+  --color-coral-light:  #ff9a80;
+  --color-coral-dark:   #e04a28;
+
+  --color-white:        #FFFFFF;
+  --color-black:        #000000;
+
+  /* Neutrals */
+  --color-neutral-50:   #fafaf9;
+  --color-neutral-100:  #f5f4f0;
+  --color-neutral-200:  #e8e5de;
+  --color-neutral-300:  #d4cfc5;
+  --color-neutral-400:  #b0a898;
+  --color-neutral-500:  #8a8070;
+  --color-neutral-600:  #655e52;
+  --color-neutral-700:  #4a4338;
+  --color-neutral-800:  #311E04;  /* = Espresso */
+  --color-neutral-900:  #1a1008;
+
+  /* ─────────────────────────────────────────────
+     SEMANTIC COLOR TOKENS
+  ───────────────────────────────────────────── */
+
+  /* Foreground */
+  --fg-primary:         var(--color-espresso);      /* Main body text */
+  --fg-secondary:       var(--color-espresso-mid);  /* Secondary/muted text */
+  --fg-tertiary:        var(--color-neutral-500);   /* Placeholders, captions */
+  --fg-inverse:         var(--color-cream);         /* Text on dark backgrounds */
+  --fg-brand:           var(--color-green);         /* Brand-colored text */
+  --fg-accent-pink:     var(--color-pink);
+  --fg-accent-coral:    var(--color-coral);
+
+  /* Background */
+  --bg-primary:         var(--color-white);         /* Default page bg */
+  --bg-secondary:       var(--color-cream);         /* Callout boxes, alt sections */
+  --bg-tertiary:        var(--color-neutral-100);   /* Subtle surface */
+  --bg-brand:           var(--color-green);         /* Strong brand sections */
+  --bg-brand-dark:      var(--color-green-dark);    /* Deep brand sections */
+  --bg-espresso:        var(--color-espresso);      /* Dark warm sections */
+
+  /* Interactive */
+  --interactive-primary:          var(--color-green);
+  --interactive-primary-hover:    var(--color-green-dark);
+  --interactive-primary-active:   var(--color-green-dark);
+  --interactive-secondary:        var(--color-cream);
+  /* ⚠ INFOGRAPHICS & CHARTS ONLY — never use in UI elements */
+  --interactive-accent:           var(--color-coral);
+  --interactive-accent-hover:     var(--color-coral-dark);
+
+  /*
+   * COLOR USAGE RULES
+   * ─────────────────────────────────────────────────────────
+   * UI surfaces (backgrounds, type, buttons, icons, cards,
+   * badges, borders, nav, inputs, interactive elements):
+   *   → Green (#005042), Cream (#FEF8E8), White (#FFF), Espresso (#311E04)
+   *
+   * Infographics, charts, data visualizations ONLY:
+   *   → Pink (#E45F95) and Coral (#FF6947) are permitted
+   *
+   * Never use Pink or Coral outside of data/infographic contexts.
+   * ─────────────────────────────────────────────────────────
+   */
+
+  /* Status */
+  --status-success:     var(--color-green);
+  --status-warning:     var(--color-coral);
+  --status-error:       var(--color-pink-dark);
+  --status-info:        var(--color-green-light);
+
+  /* Borders */
+  --border-light:       var(--color-neutral-200);
+  --border-medium:      var(--color-neutral-300);
+  --border-strong:      var(--color-neutral-400);
+  --border-brand:       var(--color-green);
+
+  /* ─────────────────────────────────────────────
+     TYPOGRAPHY TOKENS
+  ───────────────────────────────────────────── */
+
+  /* Font Families */
+  --font-headline:  'Poppins', 'Segoe UI', sans-serif;
+  --font-body:      'DM Sans', 'Segoe UI', sans-serif;
+  --font-system:    Arial, 'Segoe UI', sans-serif;  /* Office use — web-safe system sans */
+  --font-mono:      'Courier New', 'Consolas', monospace;
+
+  /* Font Weights */
+  --fw-light:       300; /* @kind font */
+  --fw-regular:     400; /* @kind font */
+  --fw-medium:      500; /* @kind font */
+  --fw-semibold:    600; /* @kind font */
+  --fw-bold:        700; /* @kind font */
+  --fw-extrabold:   800; /* @kind font */
+
+  /* Font Scale — Type Ramp */
+  --text-xs:        0.75rem;    /* 12px */
+  --text-sm:        0.875rem;   /* 14px */
+  --text-base:      1rem;       /* 16px */
+  --text-md:        1.125rem;   /* 18px */
+  --text-lg:        1.25rem;    /* 20px */
+  --text-xl:        1.5rem;     /* 24px */
+  --text-2xl:       1.875rem;   /* 30px */
+  --text-3xl:       2.25rem;    /* 36px */
+  --text-4xl:       3rem;       /* 48px */
+  --text-5xl:       3.75rem;    /* 60px */
+  --text-6xl:       4.5rem;     /* 72px */
+
+  /* Line Heights */
+  --lh-tight:       1.15; /* @kind font */
+  --lh-snug:        1.3; /* @kind font */
+  --lh-normal:      1.5; /* @kind font */
+  --lh-relaxed:     1.65; /* @kind font */
+  --lh-loose:       1.85; /* @kind font */
+
+  /* Letter Spacing */
+  --ls-tight:       -0.02em; /* @kind font */
+  --ls-normal:      0; /* @kind font */
+  --ls-wide:        0.02em; /* @kind font */
+  --ls-wider:       0.04em; /* @kind font */
+  --ls-widest:      0.08em; /* @kind font */
+
+  /* ─────────────────────────────────────────────
+     SPACING TOKENS
+  ───────────────────────────────────────────── */
+  --space-1:   0.25rem;   /*  4px */
+  --space-2:   0.5rem;    /*  8px */
+  --space-3:   0.75rem;   /* 12px */
+  --space-4:   1rem;      /* 16px */
+  --space-5:   1.25rem;   /* 20px */
+  --space-6:   1.5rem;    /* 24px */
+  --space-8:   2rem;      /* 32px */
+  --space-10:  2.5rem;    /* 40px */
+  --space-12:  3rem;      /* 48px */
+  --space-16:  4rem;      /* 64px */
+  --space-20:  5rem;      /* 80px */
+  --space-24:  6rem;      /* 96px */
+
+  /* ─────────────────────────────────────────────
+     BORDER RADIUS
+  ───────────────────────────────────────────── */
+  --radius-sm:    4px;
+  --radius-md:    8px;
+  --radius-lg:    12px;
+  --radius-xl:    16px;
+  --radius-2xl:   24px;
+  --radius-full:  9999px;
+
+  /* ─────────────────────────────────────────────
+     SHADOWS
+  ───────────────────────────────────────────── */
+  --shadow-sm:   0 1px 3px rgba(49, 30, 4, 0.08), 0 1px 2px rgba(49, 30, 4, 0.04);
+  --shadow-md:   0 4px 12px rgba(49, 30, 4, 0.10), 0 2px 4px rgba(49, 30, 4, 0.06);
+  --shadow-xl:   0 16px 48px rgba(49, 30, 4, 0.15), 0 8px 16px rgba(49, 30, 4, 0.10);
+
+  /* ─────────────────────────────────────────────
+     NOT IN BRAND KIT
+     — No gradients (--gradient-*) of any kind
+     — No frosted glass / backdrop-filter
+     — No --shadow-lg, --shadow-green
+     Use flat brand colors: Green, Cream, White, Espresso.
+  ───────────────────────────────────────────── */
+
+  /* ─────────────────────────────────────────────
+     TRANSITIONS
+  ───────────────────────────────────────────── */
+  --transition-fast:    150ms ease; /* @kind other */
+  --transition-normal:  250ms ease; /* @kind other */
+  --transition-slow:    400ms ease; /* @kind other */
+}
+
+/* ─────────────────────────────────────────────
+   SEMANTIC ELEMENT STYLES
+───────────────────────────────────────────── */
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  font-weight: var(--fw-regular);
+  line-height: var(--lh-normal);
+  color: var(--fg-primary);
+  background-color: var(--bg-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-wrap: pretty;
+}
+
+h1 {
+  font-family: var(--font-headline);
+  font-size: var(--text-4xl);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--ls-tight);
+  color: var(--color-green);
+}
+
+h2 {
+  font-family: var(--font-headline);
+  font-size: var(--text-3xl);
+  font-weight: var(--fw-bold);
+  line-height: var(--lh-snug);
+  letter-spacing: var(--ls-tight);
+  color: var(--color-green);
+}
+
+h3 {
+  font-family: var(--font-headline);
+  font-size: var(--text-2xl);
+  font-weight: var(--fw-semibold);
+  line-height: var(--lh-snug);
+  color: var(--color-espresso);
+}
+
+h4 {
+  font-family: var(--font-headline);
+  font-size: var(--text-xl);
+  font-weight: var(--fw-semibold);
+  line-height: var(--lh-snug);
+  color: var(--color-espresso);
+}
+
+h5 {
+  font-family: var(--font-headline);
+  font-size: var(--text-lg);
+  font-weight: var(--fw-medium);
+  color: var(--color-espresso);
+}
+
+h6 {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  font-weight: var(--fw-semibold);
+  letter-spacing: var(--ls-wider);
+  text-transform: uppercase;
+  color: var(--color-green);
+}
+
+p {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: var(--lh-relaxed);
+  color: var(--fg-primary);
+}
+
+p.lead {
+  font-size: var(--text-lg);
+  line-height: var(--lh-relaxed);
+  color: var(--fg-secondary);
+}
+
+p.caption {
+  font-size: var(--text-sm);
+  color: var(--fg-tertiary);
+  line-height: var(--lh-normal);
+}
+
+a {
+  color: var(--color-green);
+  text-decoration: underline;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--color-green-dark);
+}
+
+code, pre {
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+  background: var(--color-cream);
+  border-radius: var(--radius-sm);
+  padding: 0.1em 0.3em;
+}
+
+label {
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: var(--fw-medium);
+  color: var(--fg-secondary);
+  letter-spacing: var(--ls-wide);
+}

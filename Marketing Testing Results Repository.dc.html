@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="_ds/lantern-brand-kit-slides-docs-019df3e1-65b9-78a0-8f08-f88bf1ca813d/colors_and_type.css">
+  <script src="_ds/lantern-brand-kit-slides-docs-019df3e1-65b9-78a0-8f08-f88bf1ca813d/_ds_bundle.js"></script>
+  <style>
+    body { margin: 0; }
+    ::selection { background: var(--color-green-tint); }
+    @media print {
+      .no-print { display: none !important; }
+      .quarter-section { break-inside: avoid; }
+      .test-card { break-inside: avoid; }
+      .report-print-mode .app-body { display: none !important; }
+      .report-print-mode .report-panel { position: static !important; inset: auto !important; box-shadow: none !important; width: 100% !important; max-width: 100% !important; max-height: none !important; transform: none !important; margin: 0 !important; }
+    }
+  </style>
+</helmet>
+
+<div class="{{ rootClass }}" style="min-height: 100vh; background: var(--bg-primary); font-family: var(--font-body); color: var(--fg-primary);">
+<div class="app-body">
+  <div style="background: var(--bg-brand); padding: 40px 48px 32px;">
+    <div style="max-width: 1280px; margin: 0 auto;">
+      <div style="font-family: var(--font-headline); font-size: var(--text-sm); font-weight: var(--fw-semibold); letter-spacing: var(--ls-widest); text-transform: uppercase; color: var(--color-cream); opacity: 0.75; margin-bottom: 8px;">Lantern Marketing Testing Steering Committee</div>
+      <h1 style="color: var(--color-cream); font-size: var(--text-5xl); margin: 0 0 8px;">Marketing Testing Results Repository</h1>
+      <p style="color: var(--color-cream); opacity: 0.85; font-size: var(--text-md); margin: 0 0 28px; max-width: 640px;">Every marketing test run to date, organized by quarter and channel — with true A/B tests separated from directional analyses.</p>
+
+      <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+        <sc-for list="{{ summaryStats }}" as="stat" hint-placeholder-count="4">
+          <div style="background: var(--bg-brand-dark); border-radius: var(--radius-lg); padding: 16px 24px; min-width: 140px;">
+            <div style="font-family: var(--font-headline); font-size: var(--text-3xl); font-weight: var(--fw-bold); color: var(--color-cream); line-height: 1;">{{ stat.value }}</div>
+            <div style="font-size: var(--text-sm); color: var(--color-cream); opacity: 0.75; margin-top: 4px;">{{ stat.label }}</div>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+  </div>
+
+  <div class="no-print" style="background: var(--bg-secondary); border-bottom: 1px solid var(--border-medium);">
+    <div style="max-width: 1280px; margin: 0 auto; padding: 0 48px; display: flex; gap: 4px; flex-wrap: wrap;">
+      <sc-for list="{{ channelTabs }}" as="tab" hint-placeholder-count="6">
+        <button onclick="{{ tab.onClick }}" style="{{ tab.style }}" style-hover="{{ tab.hoverStyle }}">{{ tab.label }}</button>
+      </sc-for>
+    </div>
+  </div>
+
+  <div class="no-print" style="position: sticky; top: 0; z-index: 20; background: var(--bg-primary); border-bottom: 1px solid var(--border-light); box-shadow: var(--shadow-sm);">
+    <div style="max-width: 1280px; margin: 0 auto; padding: 16px 48px; display: flex; flex-direction: column; gap: 14px;">
+      <div style="display: flex; gap: 12px; align-items: center; flex-wrap: wrap;">
+        <input
+          type="text"
+          value="{{ search }}"
+          oninput="{{ onSearchChange }}"
+          placeholder="Search tests by name, audience, or channel…"
+          style="flex: 1; min-width: 240px; padding: 10px 16px; border: 1px solid var(--border-medium); border-radius: var(--radius-md); font-family: var(--font-body); font-size: var(--text-base); color: var(--fg-primary); background: var(--bg-tertiary);"
+        />
+        <div style="display: flex; gap: 6px; background: var(--bg-tertiary); border-radius: var(--radius-md); padding: 3px;">
+          <sc-for list="{{ testTypeOptions }}" as="opt" hint-placeholder-count="3">
+            <button
+              onclick="{{ opt.onClick }}"
+              style="{{ opt.style }}"
+              style-hover="{{ opt.hoverStyle }}"
+            >{{ opt.label }}</button>
+          </sc-for>
+        </div>
+        <button onclick="{{ onPrint }}" style="padding: 10px 18px; border-radius: var(--radius-md); border: 1px solid var(--border-brand); background: var(--bg-primary); color: var(--color-green); font-family: var(--font-body); font-weight: var(--fw-semibold); font-size: var(--text-sm); cursor: pointer;" style-hover="background: var(--color-green-tint);">Print / Export</button>
+      </div>
+
+      <div style="display: flex; gap: 8px; flex-wrap: wrap; align-items: center;">
+        <span style="font-size: var(--text-xs); font-weight: var(--fw-semibold); letter-spacing: var(--ls-wide); text-transform: uppercase; color: var(--fg-tertiary); margin-right: 4px;">Quarter</span>
+        <sc-for list="{{ quarterChips }}" as="chip" hint-placeholder-count="4">
+          <button onclick="{{ chip.onClick }}" style="{{ chip.style }}">{{ chip.label }}</button>
+        </sc-for>
+      </div>
+    </div>
+  </div>
+
+  <div style="max-width: 1280px; margin: 0 auto; padding: 32px 48px 80px;">
+    <sc-if value="{{ hasResults }}" hint-placeholder-val="{{ true }}">
+      <sc-for list="{{ quarterGroups }}" as="group" hint-placeholder-count="2">
+        <div class="quarter-section" style="margin-bottom: 40px;">
+          <div style="display: flex; align-items: baseline; gap: 12px; margin-bottom: 16px; border-bottom: 2px solid var(--color-green); padding-bottom: 8px;">
+            <h2 style="margin: 0;">{{ group.label }}</h2>
+            <span style="font-size: var(--text-sm); color: var(--fg-tertiary);">{{ group.countLabel }}</span>
+          </div>
+          <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); gap: 20px;">
+            <sc-for list="{{ group.tests }}" as="t" hint-placeholder-count="3">
+              <div
+                class="test-card"
+                onclick="{{ t.onOpen }}"
+                style="background: var(--bg-primary); border: 1px solid var(--border-light); border-radius: var(--radius-lg); padding: 20px; cursor: pointer; box-shadow: var(--shadow-sm); transition: box-shadow var(--transition-fast), border-color var(--transition-fast); display: flex; flex-direction: column; gap: 12px;"
+                style-hover="box-shadow: var(--shadow-md); border-color: var(--border-brand);"
+              >
+                <div style="display: flex; justify-content: space-between; align-items: flex-start; gap: 8px;">
+                  <div style="display: flex; gap: 6px; flex-wrap: wrap;">
+                    <sc-for list="{{ t.channelBadges }}" as="cb" hint-placeholder-count="1">
+                      <span style="font-size: var(--text-xs); font-weight: var(--fw-medium); background: var(--bg-secondary); color: var(--color-espresso); padding: 3px 10px; border-radius: var(--radius-full);">{{ cb }}</span>
+                    </sc-for>
+                  </div>
+                  <span style="{{ t.typeBadgeStyle }}">{{ t.typeBadgeLabel }}</span>
+                </div>
+                <h4 style="margin: 0; line-height: var(--lh-snug);">{{ t.name }}</h4>
+                <div style="display: flex; align-items: baseline; gap: 6px;">
+                  <span style="{{ t.toneStyle }}">{{ t.toneMark }}</span>
+                  <span style="font-size: var(--text-sm); color: var(--fg-secondary); line-height: var(--lh-snug);">{{ t.cardStat }}</span>
+                </div>
+                <sc-if value="{{ t.flagged }}" hint-placeholder-val="{{ false }}">
+                  <div style="font-size: var(--text-xs); color: var(--color-espresso-mid); background: var(--bg-tertiary); border: 1px dashed var(--border-strong); border-radius: var(--radius-sm); padding: 6px 10px;">⚑ Needs review — {{ t.flagReason }}</div>
+                </sc-if>
+              </div>
+            </sc-for>
+          </div>
+        </div>
+      </sc-for>
+    </sc-if>
+    <sc-if value="{{ noResults }}" hint-placeholder-val="{{ false }}">
+      <div style="text-align: center; padding: 80px 20px; color: var(--fg-tertiary);">
+        <p style="font-size: var(--text-lg);">No tests match your filters.</p>
+      </div>
+    </sc-if>
+  </div>
+
+  <sc-if value="{{ activeTest }}" hint-placeholder-val="{{ false }}">
+    <div class="no-print" onclick="{{ onClosePanel }}" style="position: fixed; inset: 0; background: rgba(49,30,4,0.35); z-index: 30;"></div>
+    <div class="no-print" style="position: fixed; top: 0; right: 0; bottom: 0; width: min(560px, 92vw); background: var(--bg-primary); z-index: 31; box-shadow: var(--shadow-xl); overflow-y: auto; padding: 32px;">
+      <button onclick="{{ onClosePanel }}" style="position: absolute; top: 24px; right: 24px; width: 36px; height: 36px; border-radius: var(--radius-full); border: 1px solid var(--border-medium); background: var(--bg-primary); color: var(--fg-primary); font-size: var(--text-lg); cursor: pointer; line-height: 1;">×</button>
+
+      <div style="display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 12px; padding-right: 48px;">
+        <sc-for list="{{ activeTest.channelBadges }}" as="cb" hint-placeholder-count="1">
+          <span style="font-size: var(--text-xs); font-weight: var(--fw-medium); background: var(--bg-secondary); color: var(--color-espresso); padding: 3px 10px; border-radius: var(--radius-full);">{{ cb }}</span>
+        </sc-for>
+        <span style="{{ activeTest.typeBadgeStyle }}">{{ activeTest.typeBadgeLabel }}</span>
+        <span style="font-size: var(--text-xs); font-weight: var(--fw-medium); background: var(--bg-tertiary); color: var(--fg-secondary); padding: 3px 10px; border-radius: var(--radius-full);">{{ activeTest.quarterBucket }}</span>
+      </div>
+
+      <h2 style="margin: 0 0 20px; padding-right: 48px;">{{ activeTest.name }}</h2>
+
+      <sc-if value="{{ activeTest.flagged }}" hint-placeholder-val="{{ false }}">
+        <div style="font-size: var(--text-sm); color: var(--color-espresso-mid); background: var(--bg-tertiary); border: 1px dashed var(--border-strong); border-radius: var(--radius-md); padding: 12px 16px; margin-bottom: 20px;">⚑ Needs review — {{ activeTest.flagReason }}</div>
+      </sc-if>
+
+      <sc-for list="{{ activeTest.blocks }}" as="block" hint-placeholder-count="4">
+        <div style="margin-bottom: 24px;">
+          <sc-if value="{{ block.isHeading }}" hint-placeholder-val="{{ false }}">
+            <h6 style="margin: 0 0 10px;">{{ block.heading }}</h6>
+          </sc-if>
+          <sc-if value="{{ block.isText }}" hint-placeholder-val="{{ false }}">
+            <p style="margin: 0; color: var(--fg-secondary); font-size: var(--text-sm); line-height: var(--lh-relaxed);">{{ block.text }}</p>
+          </sc-if>
+          <sc-if value="{{ block.isStatGrid }}" hint-placeholder-val="{{ false }}">
+            <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px;">
+              <sc-for list="{{ block.stats }}" as="s" hint-placeholder-count="2">
+                <div style="background: var(--bg-secondary); border-radius: var(--radius-md); padding: 12px 14px;">
+                  <div style="font-family: var(--font-headline); font-size: var(--text-xl); font-weight: var(--fw-bold); color: var(--color-green); line-height: 1.1;">{{ s.value }}</div>
+                  <div style="font-size: var(--text-xs); color: var(--fg-secondary); margin-top: 4px; font-weight: var(--fw-medium);">{{ s.label }}</div>
+                  <sc-if value="{{ s.detail }}" hint-placeholder-val="{{ false }}">
+                    <div style="font-size: var(--text-xs); color: var(--fg-tertiary); margin-top: 2px;">{{ s.detail }}</div>
+                  </sc-if>
+                </div>
+              </sc-for>
+            </div>
+          </sc-if>
+          <sc-if value="{{ block.isList }}" hint-placeholder-val="{{ false }}">
+            <ul style="margin: 0; padding-left: 18px; display: flex; flex-direction: column; gap: 6px;">
+              <sc-for list="{{ block.items }}" as="li" hint-placeholder-count="3">
+                <li style="font-size: var(--text-sm); color: var(--fg-secondary); line-height: var(--lh-relaxed);">{{ li }}</li>
+              </sc-for>
+            </ul>
+          </sc-if>
+          <sc-if value="{{ block.isTable }}" hint-placeholder-val="{{ false }}">
+            <div style="overflow-x: auto; border: 1px solid var(--border-light); border-radius: var(--radius-md);">
+              <table style="width: 100%; border-collapse: collapse; font-size: var(--text-xs);">
+                <thead>
+                  <tr>
+                    <sc-for list="{{ block.headers }}" as="h" hint-placeholder-count="4">
+                      <th style="text-align: left; padding: 8px 10px; background: var(--bg-secondary); color: var(--color-espresso); font-weight: var(--fw-semibold); border-bottom: 1px solid var(--border-medium); white-space: nowrap;">{{ h }}</th>
+                    </sc-for>
+                  </tr>
+                </thead>
+                <tbody>
+                  <sc-for list="{{ block.rows }}" as="row" hint-placeholder-count="3">
+                    <tr>
+                      <sc-for list="{{ row.cells }}" as="cell" hint-placeholder-count="4">
+                        <td style="padding: 8px 10px; border-bottom: 1px solid var(--border-light); color: var(--fg-secondary); white-space: nowrap;">{{ cell }}</td>
+                      </sc-for>
+                    </tr>
+                  </sc-for>
+                </tbody>
+              </table>
+            </div>
+          </sc-if>
+        </div>
+      </sc-for>
+
+      <sc-if value="{{ activeTest.impactAvailable }}" hint-placeholder-val="{{ false }}">
+        <div style="margin: 8px 0 0; padding: 20px; background: var(--bg-secondary); border-radius: var(--radius-lg);">
+          <h6 style="margin: 0 0 4px;">Estimate Impact For A Client</h6>
+          <p style="margin: 0 0 14px; font-size: var(--text-sm); color: var(--fg-secondary);">Project how this test's control vs. test rates would play out for a specific client's population.</p>
+          <div style="display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 14px;">
+            <input type="text" placeholder="Client name (optional)" value="{{ calcClientName }}" oninput="{{ onClientNameChange }}" style="flex: 1; min-width: 160px; padding: 9px 12px; border: 1px solid var(--border-medium); border-radius: var(--radius-md); font-family: var(--font-body); font-size: var(--text-sm); background: var(--bg-primary); color: var(--fg-primary);" />
+            <input type="number" min="1" placeholder="EE count" value="{{ calcEECount }}" oninput="{{ onEECountChange }}" style="width: 140px; padding: 9px 12px; border: 1px solid var(--border-medium); border-radius: var(--radius-md); font-family: var(--font-body); font-size: var(--text-sm); background: var(--bg-primary); color: var(--fg-primary);" />
+          </div>
+          <sc-if value="{{ calcResults }}" hint-placeholder-val="{{ false }}">
+            <div style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 16px;">
+              <sc-for list="{{ calcResults }}" as="r" hint-placeholder-count="2">
+                <div style="background: var(--bg-primary); border-radius: var(--radius-md); padding: 12px 14px; display: flex; justify-content: space-between; align-items: center; gap: 10px; flex-wrap: wrap;">
+                  <div>
+                    <div style="font-size: var(--text-sm); font-weight: var(--fw-semibold); color: var(--color-espresso);">{{ r.label }}</div>
+                    <div style="font-size: var(--text-xs); color: var(--fg-tertiary);">{{ r.controlLabel }}: {{ r.controlCountLabel }} ({{ r.controlPct }}%) · {{ r.testLabel }}: {{ r.testCountLabel }} ({{ r.testPct }}%)</div>
+                  </div>
+                  <div style="font-family: var(--font-headline); font-size: var(--text-xl); font-weight: var(--fw-bold); color: var(--color-green); white-space: nowrap;">{{ r.deltaLabel }}</div>
+                </div>
+              </sc-for>
+            </div>
+            <button onclick="{{ onOpenReport }}" style="padding: 10px 18px; border-radius: var(--radius-md); border: none; background: var(--color-green); color: var(--color-cream); font-family: var(--font-body); font-weight: var(--fw-semibold); font-size: var(--text-sm); cursor: pointer;">Generate PDF Report</button>
+          </sc-if>
+        </div>
+      </sc-if>
+      <sc-if value="{{ activeTest.impactUnavailable }}" hint-placeholder-val="{{ false }}">
+        <div style="margin-top: 8px; padding: 16px 20px; background: var(--bg-tertiary); border-radius: var(--radius-lg); font-size: var(--text-sm); color: var(--fg-tertiary);">Impact calculator not available for this test — {{ activeTest.impactUnavailableReason }}</div>
+      </sc-if>
+    </div>
+  </sc-if>
+</div>
+
+  <sc-if value="{{ showReport }}" hint-placeholder-val="{{ false }}">
+    <div class="no-print" onclick="{{ onCloseReport }}" style="position: fixed; inset: 0; background: rgba(49,30,4,0.45); z-index: 40;"></div>
+    <div class="report-panel" style="position: fixed; top: 24px; left: 50%; transform: translateX(-50%); width: 816px; max-width: 94vw; max-height: 92vh; overflow-y: auto; background: var(--bg-primary); z-index: 41; box-shadow: var(--shadow-xl); border-radius: var(--radius-lg); padding: 56px;">
+      <button class="no-print" onclick="{{ onCloseReport }}" style="position: absolute; top: 20px; right: 20px; width: 36px; height: 36px; border-radius: var(--radius-full); border: 1px solid var(--border-medium); background: var(--bg-primary); color: var(--fg-primary); font-size: var(--text-lg); cursor: pointer; line-height: 1;">×</button>
+
+      <div style="font-family: var(--font-headline); font-size: var(--text-sm); font-weight: var(--fw-semibold); letter-spacing: var(--ls-widest); text-transform: uppercase; color: var(--color-green);">Client Impact Projection</div>
+      <h1 style="margin: 8px 0 4px; font-size: var(--text-3xl);">{{ reportData.testName }}</h1>
+      <p style="margin: 0 0 28px; color: var(--fg-secondary);">Prepared for {{ reportData.clientLabel }} · {{ reportData.eeCountLabel }} covered lives</p>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; margin-bottom: 28px;">
+        <sc-for list="{{ reportData.metrics }}" as="m" hint-placeholder-count="2">
+          <div style="background: var(--bg-secondary); border-radius: var(--radius-lg); padding: 18px;">
+            <div style="font-size: var(--text-xs); font-weight: var(--fw-semibold); text-transform: uppercase; letter-spacing: var(--ls-wide); color: var(--fg-secondary);">{{ m.label }}</div>
+            <div style="font-family: var(--font-headline); font-size: var(--text-4xl); font-weight: var(--fw-extrabold); color: var(--color-green); line-height: 1; margin-top: 6px;">{{ m.deltaLabel }}</div>
+            <div style="font-size: var(--text-sm); color: var(--fg-secondary); margin-top: 8px;">{{ m.controlLabel }}: {{ m.controlCountLabel }} ({{ m.controlPct }}%) → {{ m.testLabel }}: {{ m.testCountLabel }} ({{ m.testPct }}%)</div>
+          </div>
+        </sc-for>
+      </div>
+
+      <div style="background: var(--bg-secondary); border-radius: var(--radius-lg); padding: 18px 20px; margin-bottom: 28px;">
+        <div style="font-size: var(--text-xs); font-weight: var(--fw-semibold); text-transform: uppercase; color: var(--fg-secondary); margin-bottom: 6px;">Methodology</div>
+        <p style="margin: 0; font-size: var(--text-sm); color: var(--fg-secondary); line-height: var(--lh-relaxed);">Projection applies the observed control and test rates from this test to the supplied covered-life count. Actual results for a specific client population may vary based on demographics, benefit design, and communication history.</p>
+      </div>
+
+      <button class="no-print" onclick="{{ onPrintReport }}" style="padding: 12px 22px; border-radius: var(--radius-md); border: none; background: var(--color-green); color: var(--color-cream); font-family: var(--font-body); font-weight: var(--fw-semibold); font-size: var(--text-base); cursor: pointer;">Print / Save as PDF</button>
+
+      <div style="margin-top: 32px; padding-top: 16px; border-top: 1px solid var(--border-light); font-size: var(--text-xs); color: var(--fg-tertiary);">Confidential and Proprietary — Lantern Marketing Testing Steering Committee</div>
+    </div>
+  </sc-if>
+
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+const CHANNELS = ["Direct Mail: Mailer", "Direct Mail: ID Card", "Email", "TMO", "Paid Ad"];
+const QUARTER_ORDER = ["Q4 2025", "Q1 2026", "Q2 2026", "Q3 2026", "Q4 2026", "Unconfirmed"];
+
+function buildDetailBlocks(t) {
+  const blocks = [];
+  const heading = (h) => blocks.push({ isHeading: true, heading: h });
+  const text = (s) => { if (s) blocks.push({ isText: true, text: s }); };
+  const statGrid = (arr) => { if (arr && arr.length) blocks.push({ isStatGrid: true, stats: arr }); };
+  const list = (arr) => { if (arr && arr.length) blocks.push({ isList: true, items: arr }); };
+  const table = (tbl) => {
+    if (!tbl || !tbl.headers) return;
+    blocks.push({ isTable: true, headers: tbl.headers, rows: tbl.rows.map(r => ({ cells: r })) });
+  };
+
+  text(t.summary);
+
+  if (t.headline) { heading('Headline'); text(t.headline); }
+  if (t.headlineMetrics) { heading('Key Metrics'); statGrid(t.headlineMetrics); }
+  if (t.significanceTest) {
+    heading('Significance Test' + (t.significanceTest.type ? ' — ' + t.significanceTest.type : ''));
+    const st = t.significanceTest;
+    const stats = Object.keys(st).filter(k => k !== 'type').map(k => ({
+      label: k.replace(/([A-Z])/g, ' $1').replace(/^./, c => c.toUpperCase()),
+      value: st[k]
+    }));
+    statGrid(stats);
+  }
+  if (t.table) { heading('Detailed Results'); table(t.table); }
+  if (t.variants) {
+    heading('Variants');
+    t.variants.forEach(v => {
+      text('**' + (v.name || '') + (v.message ? ': "' + v.message + '"' : '') + '**');
+      const stats = [];
+      if (v.mailersSent) stats.push({ label: 'Mailers Sent', value: v.mailersSent.toLocaleString() });
+      if (v.members) stats.push({ label: 'Members', value: v.members.toLocaleString() });
+      if (v.firstCalls) stats.push({ label: 'First Calls', value: v.firstCalls });
+      if (v.newCases) stats.push({ label: 'New Cases', value: v.newCases });
+      if (v.callRate) stats.push({ label: 'Call Rate', value: v.callRate });
+      if (v.caseRate) stats.push({ label: 'Case Rate', value: v.caseRate });
+      if (v.liftVsHoldout) stats.push({ label: 'Lift vs. Holdout', value: v.liftVsHoldout });
+      if (v.callToCase) stats.push({ label: 'Call to Case', value: v.callToCase });
+      if (v.caseToConsult) stats.push({ label: 'Case to Consult', value: v.caseToConsult });
+      if (v.consultToProcedure) stats.push({ label: 'Consult to Procedure', value: v.consultToProcedure });
+      statGrid(stats);
+    });
+  }
+  if (t.segments) {
+    heading('Segments');
+    t.segments.forEach(s => {
+      text('**' + s.name + '** — Call rate ' + s.callRate + '. ' + (s.detail || ''));
+      const stats = [];
+      if (s.costOfLetter) stats.push({ label: 'Cost of Letter', value: s.costOfLetter });
+      if (s.revenueDriven) stats.push({ label: 'Revenue Driven', value: s.revenueDriven });
+      statGrid(stats);
+      if (s.recommendation) text(s.recommendation);
+    });
+  }
+  if (t.internalSends) {
+    heading('Lantern Internal Sends');
+    statGrid(t.internalSends.map(x => ({ label: x.name, value: x.lift, detail: x.change })));
+  }
+  if (t.externalSends) {
+    heading('M-DCPS External Sends');
+    statGrid(t.externalSends.map(x => ({ label: x.name, value: x.lift, detail: x.change })));
+  }
+  if (t.clientBreakdown) {
+    heading('Client Breakdown');
+    statGrid(t.clientBreakdown.map(c => ({ label: c.client, value: c.count != null ? c.count.toLocaleString() : '—' })));
+  }
+  if (t.whyThisMailerMatters) {
+    heading('Why This Mailer Matters');
+    list(t.whyThisMailerMatters.map(w => w.title + ' — ' + w.detail));
+  }
+  if (t.whySpouseShareMatters) { heading('Why the Spouse Share Signal Matters'); list(t.whySpouseShareMatters); }
+  if (t.keyTakeaways) { heading('Key Takeaways'); list(t.keyTakeaways); }
+  if (t.caveats) { heading('Caveats'); list(t.caveats); }
+  if (t.analysis) { heading('Analysis'); text(t.analysis); }
+  if (t.recommendation) { heading('Recommendation'); text(t.recommendation); }
+  if (t.results) { heading('Results'); text(t.results); }
+  if (t.bottomLine) { heading('Bottom Line'); text(t.bottomLine); }
+  if (t.methodology) { heading('Methodology'); text(t.methodology); }
+  if (t.notes) { heading('Notes'); text(typeof t.notes === 'string' ? t.notes : JSON.stringify(t.notes)); }
+  if (t.logCrossRef) { heading('Historical Log Cross-Reference'); text(t.logCrossRef); }
+
+  return blocks;
+}
+
+class Component extends DCLogic {
+  state = {
+    search: '',
+    testTypeFilter: 'all',
+    selectedChannel: 'All',
+    selectedQuarters: [],
+    openTestId: null,
+    tests: [],
+    loaded: false,
+    calcClientName: '',
+    calcEECount: '',
+    showReport: false,
+    reportPrinting: false
+  };
+
+  async componentDidMount() {
+    const mod = await import('./data/test-results.processed.js');
+    this.setState({ tests: mod.TESTS, loaded: true });
+    window.addEventListener('afterprint', () => this.setState({ reportPrinting: false }));
+  }
+
+  toggleQuarter(q) {
+    this.setState(s => ({
+      selectedQuarters: s.selectedQuarters.includes(q)
+        ? s.selectedQuarters.filter(x => x !== q)
+        : [...s.selectedQuarters, q]
+    }));
+  }
+
+  renderVals() {
+    const { tests, search, testTypeFilter, selectedChannel, selectedQuarters, openTestId } = this.state;
+
+    const matchesSearch = (t) => {
+      if (!search.trim()) return true;
+      const q = search.toLowerCase();
+      return t.name.toLowerCase().includes(q) ||
+        (t.summary || '').toLowerCase().includes(q) ||
+        t.channels.join(' ').toLowerCase().includes(q) ||
+        t.quarterBucket.toLowerCase().includes(q);
+    };
+
+    const filtered = tests.filter(t =>
+      matchesSearch(t) &&
+      (testTypeFilter === 'all' || t.testTypeCategory === testTypeFilter) &&
+      (selectedChannel === 'All' || t.channels.includes(selectedChannel)) &&
+      (selectedQuarters.length === 0 || selectedQuarters.includes(t.quarterBucket))
+    );
+
+    const decorate = (t) => ({
+      ...t,
+      channelBadges: t.channels,
+      typeBadgeLabel: t.testTypeCategory === 'true-test' ? 'True Test' : 'Directional Analysis',
+      typeBadgeStyle: t.testTypeCategory === 'true-test'
+        ? 'font-size: var(--text-xs); font-weight: var(--fw-semibold); background: var(--color-green); color: var(--color-cream); padding: 4px 10px; border-radius: var(--radius-full); white-space: nowrap;'
+        : 'font-size: var(--text-xs); font-weight: var(--fw-semibold); background: var(--bg-primary); color: var(--color-espresso); border: 1px solid var(--border-strong); padding: 3px 10px; border-radius: var(--radius-full); white-space: nowrap;',
+      toneMark: t.tone === 'positive' ? '↑' : t.tone === 'negative' ? '↓' : '↔',
+      toneStyle: 'font-weight: var(--fw-bold); color: ' + (t.tone === 'positive' ? 'var(--color-green)' : t.tone === 'negative' ? 'var(--color-espresso-mid)' : 'var(--fg-tertiary)') + ';',
+      onOpen: () => this.setState({ openTestId: t.id, calcClientName: '', calcEECount: '' }),
+      blocks: openTestId === t.id ? buildDetailBlocks(t) : null,
+      impactUnavailable: !t.impactAvailable
+    });
+
+    const quarterMap = {};
+    filtered.forEach(t => {
+      if (!quarterMap[t.quarterBucket]) quarterMap[t.quarterBucket] = [];
+      quarterMap[t.quarterBucket].push(decorate(t));
+    });
+    const quarterGroups = QUARTER_ORDER
+      .filter(q => quarterMap[q] && quarterMap[q].length)
+      .map(q => ({ label: q, countLabel: quarterMap[q].length + (quarterMap[q].length === 1 ? ' test' : ' tests'), tests: quarterMap[q] }));
+
+    const trueCount = tests.filter(t => t.testTypeCategory === 'true-test').length;
+    const directionalCount = tests.filter(t => t.testTypeCategory === 'directional').length;
+    const quartersCovered = new Set(tests.map(t => t.quarterBucket)).size;
+
+    const chipStyle = (active) => 'font-size: var(--text-sm); font-weight: var(--fw-medium); padding: 6px 14px; border-radius: var(--radius-full); border: 1px solid ' + (active ? 'var(--color-green)' : 'var(--border-medium)') + '; background: ' + (active ? 'var(--color-green)' : 'var(--bg-primary)') + '; color: ' + (active ? 'var(--color-cream)' : 'var(--fg-secondary)') + '; cursor: pointer;';
+
+    const segStyle = (active) => 'padding: 7px 16px; border-radius: var(--radius-sm); border: none; font-family: var(--font-body); font-size: var(--text-sm); font-weight: var(--fw-medium); cursor: pointer; background: ' + (active ? 'var(--bg-primary)' : 'transparent') + '; color: ' + (active ? 'var(--color-green)' : 'var(--fg-secondary)') + '; box-shadow: ' + (active ? 'var(--shadow-sm)' : 'none') + ';';
+
+    const activeRaw = openTestId ? tests.find(t => t.id === openTestId) : null;
+    const activeTest = activeRaw ? decorate(activeRaw) : null;
+
+    const ee = parseFloat(this.state.calcEECount);
+    const fmtNum = (n) => Math.round(n).toLocaleString();
+    let calcResults = null;
+    let reportData = null;
+    if (activeRaw && activeRaw.impactAvailable && ee > 0) {
+      calcResults = activeRaw.impactMetrics.map(m => {
+        const controlCount = Math.round((m.controlPct / 100) * ee);
+        const testCount = Math.round((m.testPct / 100) * ee);
+        const delta = testCount - controlCount;
+        return {
+          label: m.label,
+          controlLabel: m.controlLabel,
+          testLabel: m.testLabel,
+          controlPct: m.controlPct,
+          testPct: m.testPct,
+          controlCountLabel: fmtNum(controlCount),
+          testCountLabel: fmtNum(testCount),
+          deltaLabel: (delta >= 0 ? '+' : '') + fmtNum(delta)
+        };
+      });
+      const clientName = this.state.calcClientName.trim();
+      reportData = {
+        testName: activeRaw.name,
+        clientLabel: clientName || 'Unnamed Client',
+        eeCountLabel: fmtNum(ee),
+        metrics: calcResults
+      };
+    }
+
+    return {
+      search,
+      onSearchChange: (e) => this.setState({ search: e.target.value }),
+      onPrint: () => window.print(),
+      summaryStats: [
+        { label: 'Total Tests', value: String(tests.length) },
+        { label: 'True Tests', value: String(trueCount) },
+        { label: 'Directional Analyses', value: String(directionalCount) },
+        { label: 'Quarters Covered', value: String(quartersCovered) }
+      ],
+      testTypeOptions: [
+        { label: 'All', onClick: () => this.setState({ testTypeFilter: 'all' }), style: segStyle(testTypeFilter === 'all') },
+        { label: 'True Tests', onClick: () => this.setState({ testTypeFilter: 'true-test' }), style: segStyle(testTypeFilter === 'true-test') },
+        { label: 'Directional', onClick: () => this.setState({ testTypeFilter: 'directional' }), style: segStyle(testTypeFilter === 'directional') }
+      ],
+      channelTabs: ['All', ...CHANNELS].map(c => {
+        const active = selectedChannel === c;
+        return {
+          label: c === 'All' ? 'All Channels' : c,
+          onClick: () => this.setState({ selectedChannel: c }),
+          style: 'padding: 14px 20px; border: none; border-bottom: 3px solid ' + (active ? 'var(--color-green)' : 'transparent') + '; background: transparent; font-family: var(--font-headline); font-size: var(--text-sm); font-weight: ' + (active ? 'var(--fw-bold)' : 'var(--fw-medium)') + '; color: ' + (active ? 'var(--color-green)' : 'var(--fg-secondary)') + '; cursor: pointer; white-space: nowrap;',
+          hoverStyle: 'color: var(--color-green);'
+        };
+      }),
+      quarterChips: QUARTER_ORDER.filter(q => tests.some(t => t.quarterBucket === q)).map(q => ({ label: q, onClick: () => this.toggleQuarter(q), style: chipStyle(selectedQuarters.includes(q)) })),
+      quarterGroups,
+      hasResults: quarterGroups.length > 0,
+      noResults: quarterGroups.length === 0,
+      activeTest,
+      onClosePanel: () => this.setState({ openTestId: null, calcClientName: '', calcEECount: '' }),
+      calcClientName: this.state.calcClientName,
+      calcEECount: this.state.calcEECount,
+      onClientNameChange: (e) => this.setState({ calcClientName: e.target.value }),
+      onEECountChange: (e) => this.setState({ calcEECount: e.target.value }),
+      calcResults,
+      reportData,
+      showReport: this.state.showReport && !!reportData,
+      onOpenReport: () => this.setState({ showReport: true }),
+      onCloseReport: () => this.setState({ showReport: false }),
+      onPrintReport: () => { this.setState({ reportPrinting: true }); setTimeout(() => window.print(), 50); },
+      rootClass: 'app-root' + (this.state.reportPrinting ? ' report-print-mode' : '')
+    };
+  }
+}
+
+</script>
+</body>
+</html>
