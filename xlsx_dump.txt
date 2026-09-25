@@ -1,0 +1,77 @@
+
+===== SHEET: Q4 2026 (worksheets/sheet1.xml) =====
+R2:  | 0 |  |  |  |  |  |  |  |  |  |  |  | 
+R3:  | 1 |  | Audience | Channel | Quarter | Start Date | End Date | Test Status | Approvals | In Monday? (Need client, what test) | Clients | Notes | Test Details
+R4:  | 1 | CTA Envelope Test (3 CTAs)  | 14 |  | Q4 2026 |  |  |  |  |  |  |  | 
+R5:  | 2 | Tier 1 Bifold Clients | 14 |  | Q4 2026 | 17 |  |  |  |  |  |  | 
+R6:  | 3 | Q4 Letter  | 14 |  | Q4 2026 |  |  |  |  |  |  |  | 
+R7:  | 4 | Q4 Letter: Lift Note vs No Lift Note | 14 |  | Q4 2026 |  |  |  |  |  |  |  | 
+R8:  | 5 | Q4 Letter - Imagery + Lift Note | 14 |  | Q4 2026 | 21 |  |  |  |  |  |  | 
+R9:  | 6 | Digital CTA TEST | 23 |  | Q4 2026 |  |  |  |  |  |  |  | 
+
+===== SHEET: Q3 2026 (worksheets/sheet2.xml) =====
+R1:  | 0 |  |  |  |  |  |  |  |  |  |  |  | 
+R3:  | 1 |  | Audience | Channel | Quarter | Start Date | End Date | Test Status | Approvals | In Monday? (Need client, what test) | Clients | Notes | Test Details
+R4: * lift note or insert | 1 | Mandatory Insert Test | Run on June and July test group (existing clients, offcycle) - Appendix | ID Card | Q3 2026 | 29 |  |  | Don't need approval |  |  |  | 
+R5:  | 2 | Insert vs Lift Note | Implementing Clients - new clients starting 6/1 or 7/1 - Appendix | ID Card | Q3 2026 | 33 |  |  | Approval needed | 35 |  |  | 
+R6:  | 3 | Plan Specific Letter | Mailer | Direct Mail | Q3 2026 | 29 |  |  | 38
+R7:  | 4 | Envelope CTA | Mailer | Direct Mail | Q3 2026 | 40 |  |  | 41 |  |  |  | A/B
+R8:  | 5 | Insert vs Lift Note | Mailer | Direct Mail | Q3 2026 | 29 |  |  | 42 |  |  |  | A/B/C (one group is holdout)
+R10:  | KEY NOTES | BRDs are complete
+R11:  |  | All Q3 Test in Monday Board, Erin to confirm status
+
+===== SHEET: Q2 2026 (worksheets/sheet3.xml) =====
+R1:  |  | 0 |  |  |  |  |  |  |  |  |  | 
+R3: Deployed | Results out | Test # | Test Name | Audience | Channel | Quarter | Start Date | End Date | Test Status | Approvals | Notes | Test Details
+R4: Yes | Yes | 1 | Bi-Fold vs Letter | 21 clients, 322k EEs | Direct Mail | Q2 2026 | Early April | June | Deployed | Approved by CS | Will finalize test groups after 3.20 (deadline for CS to obtain approvals). As of 3/27 - list shared with Ashi, ready to go | A/B
+R5: Yes | Yes | 2 | Letter vs Letter - Employer Branding | 61 clients, 686k EEs | Direct Mail | Q2 2026 | Early April | June | Deployed | Approved by CS | Will finalize test groups after 3.20 (deadline for CS to obtain approvals) As of 3/27 - list shared with Ashi, ready to go | A/B
+R6: Yes | Yes | 3 | Spouse Mailer CTA Envelope Test | State of Florida & National Railroad | Direct Mail | Q2 2026 | Est by 3/22 | 46135 | Deployed | Approved by Shelby 2/11 | Ashi deployed 2/11 (ahead of her trip) with 1/3 being held out, and one of each of the remaining thirds testing a different potential CTA on the envelope | A/B/C (one group is holdout)
+R7: Yes | No | 4 | Ask HR vs CTA Bifold | Tyson | Direct Mail | Q2 2026 | 46148 | 46176 | Designed, ready for Deployment | 70 |  | 3.18 - Monday Link
+R8: Yes | No | 5 | TMO Holdout Test | NCSHP | TMO | Q2 2026 | 46082 | TBD | Active as of 3/4 | Approved/deployed by Hope and Spencer | NCSHP - guidance was to test now, ask forgiveness later. Will begin 3/1. Will be for Journeys 1-2 MSK & Series 1 BARI,Channels - DM & Email | Holdout A/B
+R9: Yes | No | 6 | Paid Ads T20 Test | 20 Selected Clients | Paid | Q2 2026 | Early April | Mid-May | Audience selected - will be launched start of Q2 w/mailers | Received Functional Team Approval (3.3) | Will be run by Working Planet | Control clients vs test clients
+R10: Yes | No | 7 | Subject Line Test | Savings Email | Email | Q2 2026 | Mid-April | Early June | Designed, ready for Deployment | Approvals not required | 3.11 -  Test has been designed, can be found here | Test Details found in appendix
+R11: Yes | No | 8 | Date & Time Test | Quality Email | Email | Q2 2026 | Late March | Early/mid May | Currently Being Designed | Approvals not required | 3.11 - one group will have normal times, one will use smart inboxing to select ideal times. Also, one group will go out each day M-F | 
+R12: Yes | No | 9 | Design vs Plain Test Test | Savings Email | Email | Q2 2026 | Mid-April | Early June | Currently Being Designed | Approvals not required | Has been designed | 
+R13:  |  | 9 | Colonoscopy Reminder Email | 45+ Active Members within 50 miles of GI | Email | Q2 2026 | TBD | TBD | Being Explored | Approvals Required | As of 2/23, Hope is working with CS to explore approvals/overall feasibility | 
+
+===== SHEET: Q1 2026 (worksheets/sheet4.xml) =====
+R1:  |  | 0 |  |  |  |  |  |  |  |  | 
+R3: Deployed | Results Out | Test # | Test Name | Audience | Channel | Quarter | Start Date | End Date | Test Status | Approvals | Notes
+R4: Yes | Yes | 1 | Oracle Network Access Teaser | Oracle | Direct Mail | Q1 2026 | 46090 | 46132 | Delayed by SeaChange | 113
+R5: Yes | Yes | 2 | Small vs Large Window Envelope Test | North Carolina State Health Plan | Direct Mail | Q1 2026 | 46038 | 46066 | Results Published | Approval not required | Results Published!
+R6: Yes | No | 3 | ID Card Lift Note | State of Alaska | Direct Mail | Q1 2026 | TBD | TBD | Deployed - waiting on results | 122
+R7: Yes | No | 3 | Magnet Test | Winsupply vs KinderCare | Direct Mail | Q1 2026 | 46076 | 46108 | Deployed - waiting on results | 125
+R8: Yes | Yes | 4 | ID Card Color Test | International Paper | Direct Mail | Q1 2026 | 46078 | 46106 | Deployed - waiting on results | 128
+R9: Yes | Yes | 5 | Email Sent Prior to ID Card Send | Flight Week #4 | Email | Q1 2026 | 1/20 & 1/27 | 46055 | Results Published |  | 
+R10: Yes | Yes | 6 | ID Card Geo Lift Test | North Carolina State Health Plan | Paid Ads | Q1 2026 | 46027 | 46055 | Results Validated | Approval not required | 
+R100:  |  |  | Sending another letter to mandatory
+R101:  |  |  | Mandatory Letter
+R104:  |  |  | emt APRIL 22
+R109:  |  |  | hOW SHOUDLd we share learnings for other deparments
+R112:  |  |  | include grant on OB call team onto our calls | gracie outbound calling | when or if it makes sense to combine forces
+R113:  |  |  | or clare from product member exp 
+
+===== SHEET: Q4 2025 (worksheets/sheet5.xml) =====
+R1:  | 0 |  |  |  |  |  |  |  |  |  | 
+R3:  | 1 |  | Audience | Channel | Quarter | Start Date | End Date | Test Status | Approvals | Notes | Results
+R4:  | 1 | Paid Ads Performance Lift Test | 133 |  | Q1 2026 | 145 |  |  | 146
+R5:  | 2 | BOFU Reactivation Email Test | Members lost mid-funnel | Email | Q1 2026 | 145 |  |  | 149
+R6:  | 3 | ID Card Design A/B Test | 14 |  | Q1 2026 | 145 |  |  | 151
+
+===== SHEET: Appendix (worksheets/sheet6.xml) =====
+R4:  | Mandatory / Voluntary ID Card Test: | Count
+R5: * | State of Delaware | 44284
+R6:  | Linde | 9093
+R7:  | Michaels | 5746
+R8:  | Core Mining (?) | 
+R10:  | Insert/Lift Note/Both ABC Test | Count
+R11:  | Off-cycle NC Health Insurance Pool | 12265
+R12:  | University of Delaware | 4729
+R13:  | Freeman Company | 3935
+R14:  | Archdiosese of Miami | 3649
+R15:  | School District of Lee County | 10313
+R16: * | Swagelok | 3700
+R17:  | Lumexa Imaging | 2700
+R18:  | Utz Quality Foods | 2177
+R19:  | National Laboratory of the Rockies | 2040
+R20:  | Noodles & Company | 700

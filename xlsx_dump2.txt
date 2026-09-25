@@ -1,0 +1,82 @@
+
+===== SHEET: Q4 2026 (worksheets/sheet1.xml) =====
+HEADERS:  | [1] | [2]Test Name | [3]Audience | [4]Channel | [5]Quarter | [6]Start Date | [7]End Date | [8]Test Status | [9]Approvals | [10]In Monday? (Need client, what test) | [11]Clients | [12]Notes | [13]Test Details
+R2:  | [1] | [2] | [3] | [4] | [5] | [6]Timeframe | [7] | [8] | [9] | [10] | [11] | [12] | [13]
+R3:  | [1] | [2]Test Name | [3]Audience | [4]Channel | [5]Quarter | [6]Start Date | [7]End Date | [8]Test Status | [9]Approvals | [10]In Monday? (Need client, what test) | [11]Clients | [12]Notes | [13]Test Details
+R4:  | [1]1 | [2]CTA Envelope Test (3 CTAs)  | [3] | [4]Direct Mail | [5]Q4 2026 | [6] | [7] | [8] | [9] | [10] | [11] | [12] | [13]
+R5:  | [1]2 | [2]Tier 1 Bifold Clients | [3] | [4]Direct Mail | [5]Q4 2026 | [6] | [7] | [8] | [9] | [10] | [11] | [12]Tier 1 clients who declined testing/optimizations | [13]
+R6:  | [1]3 | [2]Q4 Letter  | [3] | [4]Direct Mail | [5]Q4 2026 | [6] | [7] | [8] | [9] | [10] | [11] | [12] | [13]
+R7:  | [1]4 | [2]Q4 Letter: Lift Note vs No Lift Note | [3] | [4]Direct Mail | [5]Q4 2026 | [6] | [7] | [8] | [9] | [10] | [11] | [12] | [13]
+R8:  | [1]5 | [2]Q4 Letter - Imagery + Lift Note | [3] | [4]Direct Mail | [5]Q4 2026 | [6] | [7] | [8] | [9] | [10] | [11] | [12]Lift note v no lift note; Lift note image v no image | [13]
+R9:  | [1]6 | [2]Digital CTA TEST | [3] | [4]Email | [5]Q4 2026 | [6] | [7] | [8] | [9] | [10] | [11] | [12] | [13]
+
+===== SHEET: Q3 2026 (worksheets/sheet2.xml) =====
+HEADERS:  | [1] | [2]Test Name | [3]Audience | [4]Channel | [5]Quarter | [6]Start Date | [7]End Date | [8]Test Status | [9]Approvals | [10]In Monday? (Need client, what test) | [11]Clients | [12]Notes | [13]Test Details
+R1:  | [1] | [2] | [3] | [4] | [5] | [6]Timeframe | [7] | [8] | [9] | [10] | [11] | [12] | [13]
+R3:  | [1] | [2]Test Name | [3]Audience | [4]Channel | [5]Quarter | [6]Start Date | [7]End Date | [8]Test Status | [9]Approvals | [10]In Monday? (Need client, what test) | [11]Clients | [12]Notes | [13]Test Details
+R4: [0]* lift note or insert | [1]1 | [2]Mandatory Insert Test | [3]Run on June and July test group (existing clients, offcycle) - Appendix | [4]ID Card | [5]Q3 2026 | [6] | [7] | [8]In Production | [9]Don't need approval | [10] | [11] | [12] | [13]
+R5:  | [1]2 | [2]Insert vs Lift Note | [3]Implementing Clients - new clients starting 6/1 or 7/1 - Appendix | [4]ID Card | [5]Q3 2026 | [6] | [7] | [8]CANCELLED - to be resumed in future quarter | [9]Approval needed | [10] | [11] | [12]State of Delaware, Spirit, Linde, Michaels | [13]
+R6:  | [1]3 | [2]Plan Specific Letter | [3]Mailer | [4]Direct Mail | [5]Q3 2026 | [6] | [7] | [8]In Production | [9] | [10] | [11] | [12] | [13]A/B
+R7:  | [1]4 | [2]Envelope CTA | [3]Mailer | [4]Direct Mail | [5]Q3 2026 | [6] | [7] | [8]CANCELLED | [9] | [10] | [11] | [12]CTA bank available | [13]A/B
+R8:  | [1]5 | [2]Insert vs Lift Note | [3]Mailer | [4]Direct Mail | [5]Q3 2026 | [6] | [7] | [8]In Production | [9] | [10] | [11] | [12]Clients MUST have carve-out available | [13]A/B/C (one group is holdout)
+R10:  | [1]KEY NOTES | [2]BRDs are complete
+R11:  |  | [2]All Q3 Test in Monday Board, Erin to confirm status
+
+===== SHEET: Q2 2026 (worksheets/sheet3.xml) =====
+HEADERS: [0]Deployed | [1]Results out | [2]Test # | [3]Test Name | [4]Audience | [5]Channel | [6]Quarter | [7]Start Date | [8]End Date | [9]Test Status | [10]Approvals | [11]Notes | [12]Test Details
+R1:  |  | [2] | [3] | [4] | [5] | [6] | [7]Timeframe | [8] | [9] | [10] | [11] | [12]
+R3: [0]Deployed | [1]Results out | [2]Test # | [3]Test Name | [4]Audience | [5]Channel | [6]Quarter | [7]Start Date | [8]End Date | [9]Test Status | [10]Approvals | [11]Notes | [12]Test Details
+R4: [0]Yes | [1]Yes | [2]1 | [3]Bi-Fold vs Letter | [4]21 clients, 322k EEs | [5]Direct Mail | [6]Q2 2026 | [7]Early April | [8]June | [9]Deployed | [10]Approved by CS | [11]Will finalize test groups after 3.20 (deadline for CS to obtain approvals). As of 3/27 - list shared with Ashi, ready to go | [12]A/B
+R5: [0]Yes | [1]Yes | [2]2 | [3]Letter vs Letter - Employer Branding | [4]61 clients, 686k EEs | [5]Direct Mail | [6]Q2 2026 | [7]Early April | [8]June | [9]Deployed | [10]Approved by CS | [11]Will finalize test groups after 3.20 (deadline for CS to obtain approvals) As of 3/27 - list shared with Ashi, ready to go | [12]A/B
+R6: [0]Yes | [1]Yes | [2]3 | [3]Spouse Mailer CTA Envelope Test | [4]State of Florida & National Railroad | [5]Direct Mail | [6]Q2 2026 | [7]Est by 3/22 | [8]46135(2026-04-23) | [9]Deployed | [10]Approved by Shelby 2/11 | [11]Ashi deployed 2/11 (ahead of her trip) with 1/3 being held out, and one of each of the remaining thirds testing a different potential CTA on the envelope | [12]A/B/C (one group is holdout)
+R7: [0]Yes | [1]No | [2]4 | [3]Ask HR vs CTA Bifold | [4]Tyson | [5]Direct Mail | [6]Q2 2026 | [7]46148(2026-05-06) | [8]46176(2026-06-03) | [9]Designed, ready for Deployment | [10] | [11]Shelby sent Monday link on 3.18 - status is: | [12]3.18 - Monday Link
+R8: [0]Yes | [1]No | [2]5 | [3]TMO Holdout Test | [4]NCSHP | [5]TMO | [6]Q2 2026 | [7]46082(2026-03-01) | [8]TBD | [9]Active as of 3/4 | [10]Approved/deployed by Hope and Spencer | [11]NCSHP - guidance was to test now, ask forgiveness later. Will begin 3/1. Will be for Journeys 1-2 MSK & Series 1 BARI,Channels - DM & Email | [12]Holdout A/B
+R9: [0]Yes | [1]No | [2]6 | [3]Paid Ads T20 Test | [4]20 Selected Clients | [5]Paid | [6]Q2 2026 | [7]Early April | [8]Mid-May | [9]Audience selected - will be launched start of Q2 w/mailers | [10]Received Functional Team Approval (3.3) | [11]Will be run by Working Planet | [12]Control clients vs test clients
+R10: [0]Yes | [1]No | [2]7 | [3]Subject Line Test | [4]Savings Email | [5]Email | [6]Q2 2026 | [7]Mid-April | [8]Early June | [9]Designed, ready for Deployment | [10]Approvals not required | [11]3.11 -  Test has been designed, can be found here | [12]Test Details found in appendix
+R11: [0]Yes | [1]No | [2]8 | [3]Date & Time Test | [4]Quality Email | [5]Email | [6]Q2 2026 | [7]Late March | [8]Early/mid May | [9]Currently Being Designed | [10]Approvals not required | [11]3.11 - one group will have normal times, one will use smart inboxing to select ideal times. Also, one group will go out each day M-F | [12]
+R12: [0]Yes | [1]No | [2]9 | [3]Design vs Plain Test Test | [4]Savings Email | [5]Email | [6]Q2 2026 | [7]Mid-April | [8]Early June | [9]Currently Being Designed | [10]Approvals not required | [11]Has been designed | [12]
+R13:  |  | [2]9 | [3]Colonoscopy Reminder Email | [4]45+ Active Members within 50 miles of GI | [5]Email | [6]Q2 2026 | [7]TBD | [8]TBD | [9]Being Explored | [10]Approvals Required | [11]As of 2/23, Hope is working with CS to explore approvals/overall feasibility | [12]
+
+===== SHEET: Q1 2026 (worksheets/sheet4.xml) =====
+HEADERS: [0]Deployed | [1]Results Out | [2]Test # | [3]Test Name | [4]Audience | [5]Channel | [6]Quarter | [7]Start Date | [8]End Date | [9]Test Status | [10]Approvals | [11]Notes
+R1:  |  | [2] | [3] | [4] | [5] | [6] | [7]Timeframe | [8] | [9] | [10] | [11]
+R3: [0]Deployed | [1]Results Out | [2]Test # | [3]Test Name | [4]Audience | [5]Channel | [6]Quarter | [7]Start Date | [8]End Date | [9]Test Status | [10]Approvals | [11]Notes
+R4: [0]Yes | [1]Yes | [2]1 | [3]Oracle Network Access Teaser | [4]Oracle | [5]Direct Mail | [6]Q1 2026 | [7]46090(2026-03-09) | [8]46132(2026-04-20) | [9]Delayed by SeaChange | [10] | [11]Results will be delayed - as of 2/25 - Data proofs are available, getting access to FTP, so can review and approve soon. After approval, will take 8-9 days of production time to mail. Will have updated mail date in the next few days.
+R5: [0]Yes | [1]Yes | [2]2 | [3]Small vs Large Window Envelope Test | [4]North Carolina State Health Plan | [5]Direct Mail | [6]Q1 2026 | [7]46038(2026-01-16) | [8]46066(2026-02-13) | [9]Results Published | [10]Approval not required | [11]Results Published!
+R6: [0]Yes | [1]No | [2]3 | [3]ID Card Lift Note | [4]State of Alaska | [5]Direct Mail | [6]Q1 2026 | [7]TBD | [8]TBD | [9]Deployed - waiting on results | [10] | [11]Not running on Medicare population.As of 3/16, status is Cards Shipped. Resulted from State of Alaska delay
+R7: [0]Yes | [1]No | [2]3 | [3]Magnet Test | [4]Winsupply vs KinderCare | [5]Direct Mail | [6]Q1 2026 | [7]46076(2026-02-23) | [8]46108(2026-03-27) | [9]Deployed - waiting on results | [10] | [11]*Results out will not be until early/mid April
+R8: [0]Yes | [1]Yes | [2]4 | [3]ID Card Color Test | [4]International Paper | [5]Direct Mail | [6]Q1 2026 | [7]46078(2026-02-25) | [8]46106(2026-03-25) | [9]Deployed - waiting on results | [10] | [11]*Results out will not be until late-March/Early April
+R9: [0]Yes | [1]Yes | [2]5 | [3]Email Sent Prior to ID Card Send | [4]Flight Week #4 | [5]Email | [6]Q1 2026 | [7]1/20 & 1/27 | [8]46055(2026-02-02) | [9]Results Published | [10] | [11]
+R10: [0]Yes | [1]Yes | [2]6 | [3]ID Card Geo Lift Test | [4]North Carolina State Health Plan | [5]Paid Ads | [6]Q1 2026 | [7]46027(2026-01-05) | [8]46055(2026-02-02) | [9]Results Validated | [10]Approval not required | [11]
+R100:  |  |  | [3]Sending another letter to mandatory
+R101:  |  |  | [3]Mandatory Letter
+R104:  |  |  | [3]emt APRIL 22
+R109:  |  |  | [3]hOW SHOUDLd we share learnings for other deparments
+R112:  |  |  | [3]include grant on OB call team onto our calls | [4]gracie outbound calling | [5]when or if it makes sense to combine forces
+R113:  |  |  | [3]or clare from product member exp 
+
+===== SHEET: Q4 2025 (worksheets/sheet5.xml) =====
+HEADERS:  | [1] | [2]Test Name | [3]Audience | [4]Channel | [5]Quarter | [6]Start Date | [7]End Date | [8]Test Status | [9]Approvals | [10]Notes | [11]Results
+R1:  | [1] | [2] | [3] | [4] | [5] | [6]Timeframe | [7] | [8] | [9] | [10] | [11]
+R3:  | [1] | [2]Test Name | [3]Audience | [4]Channel | [5]Quarter | [6]Start Date | [7]End Date | [8]Test Status | [9]Approvals | [10]Notes | [11]Results
+R4:  | [1]1 | [2]Paid Ads Performance Lift Test | [3] | [4]Paid Ads | [5]Q1 2026 | [6] | [7] | [8]Deployed, results published | [9] | [10] | [11]Estimated 10–12% lift in member call rate performance compared to baseline. Vendor stated test met statistical significance.​ Paid digital ads can generate measurable incremental impact, should continue pending further testing.​
+R5:  | [1]2 | [2]BOFU Reactivation Email Test | [3]Members lost mid-funnel | [4]Email | [5]Q1 2026 | [6] | [7] | [8]Deployed, results published | [9] | [10] | [11]BOFU emails achieved 26% open rate (1.5× higher than baseline) and a 0.44% case conversion rate per send (9× higher) versus general marketing emails, despite some source data gaps.​ Targeted BOFU reactivation emails outperform general marketing emails in engagement and downstream case creation and should continue to be practiced.​
+R6:  | [1]3 | [2]ID Card Design A/B Test | [3] | [4]Direct Mail | [5]Q1 2026 | [6] | [7] | [8]Deployed, results published | [9] | [10] | [11]Both ID cards drove positive call lift despite overall seasonal decline, with the control (Z‑fold) version performing slightly better than the new white card (+0.60% vs. +0.51% lift).​ ID card mailers appear to generate incremental call engagement, but new design did not outperform the existing control and necessitates further testing before rollout.​
+
+===== SHEET: Appendix (worksheets/sheet6.xml) =====
+R4:  | [1]Mandatory / Voluntary ID Card Test: | [2]Count
+R5: [0]* | [1]State of Delaware | [2]44284(2021-03-29)
+R6:  | [1]Linde | [2]9093
+R7:  | [1]Michaels | [2]5746
+R8:  | [1]Core Mining (?) | [2]
+R10:  | [1]Insert/Lift Note/Both ABC Test | [2]Count
+R11:  | [1]Off-cycle NC Health Insurance Pool | [2]12265
+R12:  | [1]University of Delaware | [2]4729
+R13:  | [1]Freeman Company | [2]3935
+R14:  | [1]Archdiosese of Miami | [2]3649
+R15:  | [1]School District of Lee County | [2]10313
+R16: [0]* | [1]Swagelok | [2]3700
+R17:  | [1]Lumexa Imaging | [2]2700
+R18:  | [1]Utz Quality Foods | [2]2177
+R19:  | [1]National Laboratory of the Rockies | [2]2040
+R20:  | [1]Noodles & Company | [2]700

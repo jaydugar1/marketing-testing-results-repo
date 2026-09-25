@@ -1,0 +1,372 @@
+
+########## SLIDE 1 ##########
+--- Text shapes ---
+* Results Repository
+* Lantern Marketing Testing Steering Committee
+* Last Updated 7.14.2026
+
+########## SLIDE 2 ##########
+--- Text shapes ---
+* Proven Results, Optimized Campaigns
+* 37% | more incremental calls | mandatory ID card insert vs. none | ID Card Insert Test · p &lt; 0.0001
+* 3x – 4x | more calls vs. holdout | mailer envelope CTA variants (A/B/C) | Spouse Mailer CTA Test
+* +11% | lift in call rate | large vs. standard window envelope | NC Window Envelope Test
+* +22% | more incremental calls | white vs. green member ID card | ID Card Color Test · 85% confidence
+* ~5.5x | increase in call volume | welcome letter vs. pre-mailing period | Southwest Welcome Letter
+* +81% | more email conversions | email sent after ID card vs. before | Email Timing A/B Test
+
+########## SLIDE 3 ##########
+--- Text shapes ---
+* Email A/B Test: Lantern-Led vs. Employer-Led
+* 202,844 emails across 3 variants  ·  Open, click &amp; conversion rates by send strategy
+* OPEN RATE LIFT | +18.5% | Employer-Led vs. Control
+* CLICK RATE LIFT | +15.6% | Employer-Led vs. Lantern-Led
+* CONVERSION RATE | Flat | ~0.07% across all variants
+* DETAILED RESULTS BY VARIANT
+* Recommendation | Adopt Employer-Led framing as the default send strategy. It delivered the highest open rate (23.24%, +3.63pp over Control) and the highest click rate (1.41%, +0.19pp over Lantern-Led). Conversions were statistically flat across all three variants, so the lift is concentrated in upper-funnel engagement.
+* Note: Control variant contains no click-through CTA, hence 0.00% click rate. Directional results; conversion sample sizes (48–53) too small for significance testing.
+--- Table 1 ---
+Variant | Sent | Open Rate | Click Rate | Conv. Rate
+Lantern-Led | 67,560 | 21.86% | 1.22% | 0.07%
+Employer-Led  ★ | 67,564 | 23.24% | 1.41% | 0.08%
+Control | 67,720 | 19.61% | 0.00% | 0.07%
+
+########## SLIDE 4 ##########
+--- Text shapes ---
+* Q1 2026 Marketing Testing Summary
+* Lantern Marketing Testing Steering Committee  |  7 tests launched  |  4 analyses completed  |  9 tests staged for Q2
+* TESTS LAUNCHED | 7  (5 DM / 1 Email / 1 Digital)
+* ANALYSES COMPLETED | 4  directional results
+* Q2 PIPELINE | 9  (4 DM / 1 TMO / 1 Paid Digital / 3 Email)
+* Tests Launched in Q1
+* DIRECT MAIL (5)
+* EMAIL (1)
+* DIGITAL (1)
+* Oracle Network Access Teaser | Small vs. Large Window Envelope (NCSHP) | Magnet Test (Winsupply vs. KinderCare) | ID Card Color Test (Intl Paper)
+* Email timing: before vs. after ID Card delivery
+* Paid digital ads on NCSHP (Working Planet)
+* Test Results (4 True Tests)
+* NC Window Envelope | Large window: +11% call rate lift, significant at 95% CI | ✓ Significant
+* Email Timing | Before ID card: +3.9pp open rate lift (+19%); click rate flat | ↑ Directional lift
+* NCSHP Paid Ads | $32 ROAS; $25K spend generated $812K est. revenue | ↑ Strong positive ROI
+* ID Card Color | Green vs. white: no significant difference (p = 0.845) | ↔ White outperformed, not stat-sig
+* Looking Ahead: 9 Tests Staged for Q2     | 4 Direct Mail  | Bi-Fold vs Letter, Letter vs Letter, Spouse Mailer CTA, Tyson CTA Bifold  | 1 TMO  |  TMO Holdout Test -- 1 Digital  |  Top 20 Client Paid Ad Test | 3 Email | Subject Line Test, Date &amp; Time Test, Design vs. Plain Test TEst
+* Directional Analyses (4 Analyses)
+* SW Welcome Letter | ~5.5x increase in call volume; letter directly drove inbound engagement | ↑ Strong positive signal
+* Tyson ID Card + Welcome | Combined uplift of +0.285%; ID Card baseline reflects post-letter behavior | ↑ Directional lift
+* Ferguson Cancer Mailer | No measurable call increase; flat results for low-prevalence condition | ↔ Flat (not a failure)
+* M-DCPS Int. vs Ext. | Internal sends avg ~80%+ lift vs ~50% external; Lantern outperforms | ✓ Internal outperforms
+
+########## SLIDE 5 ##########
+--- Text shapes ---
+* Q1 2026 - NC Window Test Results
+* Large Window vs. Small Window envelope  |  28-day pre/post analysis  |  Call rate &amp; case rate per piece mailed
+* CALL RATE | 0.951%  vs 0.856% | Significant at 95% CI
+* CALL RATE LIFT | +0.074pp  (+11% relative) | Statistically significant
+* CASE RATE | 0.417%  vs 0.376% | Significant at 90% CI
+* Detailed Results
+* Recommendation | The Large Window envelope is the stronger performer. The 11% relative improvement in call lift is statistically significant, and groups were properly randomized. With both window types costing 10 cents per envelope, we recommend the Large Window format as the go-forward standard, with an expectation of a positive return on no net-new investment.
+* Methodology: 28-day pre/post mailing analysis. DiD = Difference-in-Differences. Both groups statistically equivalent pre-mailing.
+--- Table 1 ---
+Metric | Small Window | Large Window | Difference | Significance | Result
+Send Count | 243,491 | 90,876 | — | — | —
+Call Rate (After ID Send) | 0.856% | 0.951% | +0.095pp | 95% confidence | Large Window
+Call Lift (DiD) | — | +0.074pp | +11% relative | Significant | Large Window
+Case Rate (After ID Send) | 0.376% | 0.417% | +0.041pp | 90% confidence | Large Window
+
+########## SLIDE 6 ##########
+--- Text shapes ---
+* Email Timing Test: Send Before vs. After ID Card
+* 165,255 total members  |  Iterable data collected 1 week after send  |  Opens, clicks &amp; conversions comparison
+* Send Before ID Card | OPENS | 16,580  20.05% open rate | CLICKS | 567  0.69% click rate
+* Send After ID Card | OPENS | 19,776  23.95% open rate | CLICKS | 566  0.69% click rate
+* vs
+* OPEN RATE LIFT | +3.90pp  (+19%)
+* CLICK RATE | Flat  (0.69% both)
+* CONVERSIONS LIFT | +29  (36 → 65)
+* Analysis | Sending after the ID Card drove significantly higher open rates, jumping nearly 4 percentage points (+19% relative). Click rate held steady at 0.69% in both groups, while conversions nearly doubled (36 → 65, +81%). Timing email sends after the ID Card arrival clearly amplifies member awareness and conversion.
+* Source: Iterable campaign data. Metrics collected 1 week after send. 165,255 total EEs in test population.
+
+########## SLIDE 7 ##########
+--- Text shapes ---
+* Q1 2026 - NCSHP Paid Ad Campaign Results
+* Working Planet Paid Ad test  |  NCSHP vs. 7-client baseline  |  Pre/post campaign analysis
+* RETURN ON AD SPEND | $32 | revenue per dollar invested | $25,252 spend  →  $812,380 est. revenue
+* NET CALL LIFT | +259.6% | Test vs. control (above ID Card baseline)
+* INCREMENTAL CALLS | +755 | 3,676 actual vs. 2,931 expected
+* NCSHP (TEST) | +476.7% | Call lift vs. pre-campaign
+* 7-CLIENT BASELINE (CONTROL) | +217.1% | Call lift vs. pre-campaign (ID Card driven)
+* ⚠  Note: NC had several external factors driving growth during this period (including internal comms, Lantern’s partnership with NCSHP in the news, and the large vs. small window test). Results reflect the NC vs. baseline difference, but not all lift is attributable solely to Paid Ads.
+* Recommendation | Lantern call data largely aligns with Working Planet’s reported results. Even accounting for external NC-specific factors, replicating such a return would be highly valuable. The data supports continued investment in Paid Ads and potentially making the NCSHP campaign evergreen, with an expectation of significant incremental revenue and a highly desirable ROAS.
+* Methodology: Pre/post campaign analysis comparing NCSHP (test) to 7-client baseline (control). Campaign timed with ID Card sends. Both groups saw lift from ID Cards; net difference isolated here.
+
+########## SLIDE 8 ##########
+--- Text shapes ---
+* ID Card Color Test – Green vs White
+* A/B Test Across International Paper Audience | 28-day pre/post comparison
+* Result: White Outperforms at 85% Confidence  |  p-value = 0.845
+* Green ID Card
+* White ID Card
+* Significance Test (Z-test on DiD)
+* DiD Estimate | −0.0278 pp
+* Pooled Std Error | 0.1423 pp
+* Z-Statistic | −0.195
+* p-value | 0.845
+* Significant (α=0.15)? | Yes
+* Card color had no statistically significant impact on call rates — both variants performed similarly.
+* Mail Count	10,755
+* Pre Calls / Post Calls	8 → 88
+* Incremental Calls	+80
+* Call Rate Delta	+0.74%
+* Mail Count	10,764
+* Pre Calls / Post Calls	5 → 103
+* Incremental Calls	+98
+* Call Rate Delta	+0.91%
+
+########## SLIDE 9 ##########
+--- Text shapes ---
+* 9
+* MSK: 3/4 stages significant  | First Call: 17.30% lift | 100.0% confidence  | New Case: 18.35% lift | 99.9% confidence  | Consult Reached: 20.20% lift | 99.7% confidence  | Surgery Reached: 18.31% lift | 91.9% confidence 
+* BAR: 1/4 stages significant | First Call: 16.99% lift | 94.2% confidence  | New Case: 24.85% lift | 96.3% confidence  | Consult Reached: 22.86% lift | 88.5% confidence  | Surgery Reached: 4.77% lift | 17.1% confidence 
+* COMBINED: 3/4 stages significant  | First Call: 17.25% lift | 100.0% confidence  | New Case: 19.47% lift | 100.0% confidence  | Consult Reached: 20.67% lift | 99.9% confidence  | Surgery Reached: 15.92% lift | 90.7% confidence 
+* TMO Holdout Test
+* March 3, 2026 – June 1, 2026 | MSK &amp; BAR Member Segments
+--- Table 1 ---
+Group | Segment | Members | First Calls | Cases | Consults | Surgeries
+Holdout | MSK | 47,840 | 1,239 | 748 | 481 | 197
+Holdout | BAR | 18,242 | 265 | 157 | 105 | 42
+Non-Holdout | MSK | 47,827 | 1,453 | 885 | 578 | 233
+Non-Holdout | BAR | 18,241 | 310 | 196 | 129 | 44
+
+########## SLIDE 10 ##########
+--- Text shapes ---
+* Confidential and Proprietary   |   10
+* Spouse Mailer Envelope CTA – A/B/C Test
+* March 23, 2026 – April 23, 2026 | MSK &amp; BAR Member Segments | Holdout: 45,194 members
+* ✓ Variant 1 vs. Variant 2: Both variants outperform the holdout (envelope with no CTA) — neither message is statistically different from the other (V1: +228% lift in calls; V2: +264% lift in calls)
+* Variant 1: "Important health benefit for spouses"
+* Mailers Sent: 56,019 | Audience: Both plan populations | First calls: 92  |  New cases: 48  (call rate: 0.164%  |  case rate: 0.095%) | Lift vs. holdout: +228% in calls (+64)  |  +179% in cases (+34)
+* Variant 2: "Your surgery costs may already be covered"
+* Mailers Sent: 56,012 | Audience: Both plan populations | First calls: 102  |  New cases: 48  (call rate: 0.182%  |  case rate: 0.086%) | Lift vs. holdout: +264% in calls (+74)  |  +153% in cases (+29)
+* Significance Test (Z-test on Proportions)
+* VARIANT 1
+* VARIANT 2
+* Metric
+* Absolute
+* Lift vs. Holdout
+* Absolute
+* Lift vs. Holdout
+* First calls
+* 92
+* +228% (+64 calls)
+* 102
+* +264% (+74 calls)
+* New cases
+* 53
+* +179% (+34 cases)
+* 48
+* +153% (+29 cases)
+* Call rate
+* 0.164%
+* —
+* 0.182%
+* —
+* Case rate
+* 0.095%
+* —
+* 0.086%
+* —
+
+########## SLIDE 11 ##########
+--- Text shapes ---
+* Confidential and Proprietary   |   11
+* Oracle Network Access Teaser – A/B Test
+* Network Access Outreach | Oracle Population | Version A: 28,664 members · Version B: 20,162 members
+* ✓ Version A vs. Version B: Version A outperforms on engagement and total outcomes — Version A is the clear winner to date (1.7x more calls · 2.1x more cases)
+* Version A: Open immediately: Changes to your Oracle health coverage
+* Members: 28,664 | Call rate: 0.58% (167 calls) | Call-to-case: 21.56% → 36 total cases (2.1x more than B) | Case-to-consult: 38.89% | Consult-to-procedure: 35.71% | Downstream metrics still in progress
+* Version B: Network Card Enclosed – Activate Today
+* Members: 20,162 | Call rate: 0.34% (68 calls) | Call-to-case: 25.00% → 17 total cases | Case-to-consult: 47.06% | Consult-to-procedure: 50.00% | Downstream metrics still in progress
+* ⚠ Important Note:  | Downstream metrics are still in progress. Consults and procedures from the 30-day window may not yet be complete.  | Revisit in a few weeks to confirm if Version B’s higher conversion rates close the gap. | Bottom Line: Version A is the clear winner to date.  | It drove significantly more engagement and actionable outcomes from the test population.
+--- Table 1 ---
+variant | total_members | total_activities | calls | cases | consults | procedures | call_rate | call_to_case_rate | case_to_consult_rate | consult_to_procedure_rate
+Version A | 28664 | 169 | 167 | 36 | 14 | 5 | 0.58% | 21.56% | 38.89% | 35.71%
+Version B | 20162 | 68 | 68 | 17 | 8 | 4 | 0.34% | 25.00% | 47.06% | 50.00%
+--- Table 2 ---
+Variant | Members | Total Records | Calls | Cases | Consults | Procedures | Call Rate | Call to Case | Case to Consult | Consult to Procedure
+Version A | 28,664 | 169 | 167 | 36 | 14 | 5 | 0.58% | 21.56% | 38.89% | 35.71%
+Version B | 20,162 | 68 | 68 | 17 | 8 | 4 | 0.34% | 25.00% | 47.06% | 50.00%
+
+########## SLIDE 12 ##########
+--- Text shapes ---
+* Employer Led drives more first calls and new cases
+* Direct mail A/B test  ·  148,911 sends per variant  ·  Lantern Led vs. Employer Led mailer format
+* TOP OF FUNNEL | +4.3% | more first calls (729 vs. 699) | +2.5% | more new cases (410 vs. 400)
+* WHAT WE LEARNED | Employer Led wins the top of the funnel (+4.3% first calls, +2.5% new cases), but the edge fades downstream — Lantern Led carried more cases through to surgery (91 vs. 76). Net: Employer Led drives volume, Lantern Led converts better deeper in the funnel.
+* Q2 2026
+--- Table 1 ---
+Funnel Stage | Lantern Led | Employer Led | Difference
+Mail Sends | 148,911 | 148,911 | —
+First Calls | 699 | 729 | +30  (+4.3%)
+New Cases | 400 | 410 | +10  (+2.5%)
+Reached Consult | 252 | 250 | −2  (−0.8%)
+Reached Surgery | 91 | 76 | −15  (−16.5%)
+
+########## SLIDE 13 ##########
+--- Text shapes ---
+* Letter format wins on first calls and surgeries
+* Direct mail A/B test  ·  Bifold vs. Letter mailer format
+* STRONGER FORMAT | +24.7% | more first calls (237 vs. 190) | +12.5% | more surgeries (18 vs. 16)
+* WHAT WE LEARNED | Letter is the clear winner: +24.7% more first calls, and that lead held all the way down to +12.5% more surgeries. Bifold led only on raw new cases (+6 vs. Letter); Letter converted better at every later stage — the stronger format for booked outcomes.
+* Q2 2026
+--- Table 1 ---
+Funnel Stage | Bifold | Letter | Difference
+Mail Sends | 51,220 | 51,256 | +36
+First Calls | 190 | 237 | +47  (+24.7%)
+New Cases | 122 | 116 | −6  (−4.9%)
+Reached Consult | 61 | 67 | +6  (+9.8%)
+Reached Surgery | 16 | 18 | +2  (+12.5%)
+
+########## SLIDE 14 ##########
+--- Text shapes ---
+* Appendix
+* Results from Directional Analyses
+* (Not True A/B Tests)
+
+########## SLIDE 15 ##########
+--- Text shapes ---
+* Confidential and Proprietary   |   15
+* Southwest Welcome Letter Results
+* Welcome letter sent 1/8/2026 — 28-day pre/post comparison
+* ~5.5x | increase in | call volume
+* BEFORE | 52 calls
+* AFTER | 287 calls
+* Key Takeaways | Strong signal the welcome letter directly drove inbound engagement | Outreach was highly effective at prompting Southwest to take action | Not directly comparable to ID Card sends — Welcome Letter is a different format with too many changed variables
+
+########## SLIDE 16 ##########
+--- Text shapes ---
+* Confidential and Proprietary   |   16
+* Tyson ID Card + Welcome Letter Analysis
+* Two-touch campaign compared against book averages and ID Card-only approach
+* ID Card Performance | 253 → 481 calls | Call rate: 0.152% → 0.290% | ✓ Directionally strong
+* Welcome Letter Lift | 8 → 238 calls | +230 calls, but post-letter rate still | ~0.7% below book avg
+* +
+* Overall Call Rate Comparison
+* 0.353%
+* Tyson
+* 0.337%
+* Book Average
+* Note: ID Card baseline reflects post-Welcome Letter behavior. Combined uplift from both touches: +0.285%.
+
+########## SLIDE 17 ##########
+--- Text shapes ---
+* Confidential and Proprietary   |   17
+* Ferguson Q4 Cancer Mailer Results
+* 28-day pre/post comparison of cancer-focused mailer send
+* BEFORE | 2 calls
+* AFTER | 2 calls
+* Key Takeaways | Cancer calls: 2 before, 2 after — no change | Surgery calls: 37 before, 38 after — essentially flat | Mailer did not drive measurable increase in inbound calls, but this is expected for a low-prevalence condition like cancer | Flat results should not be read as a failure; the right benchmark is consistently reaching the right population
+* Why This Mailer Matters
+* Awareness
+* Members know cancer resources and support are available to them
+* Touchpoint Creation
+* Brings Lantern in front of members navigating a cancer diagnosis
+* Top-of-Mind Presence
+* Members remember this communication and are more likely to reach out
+
+########## SLIDE 18 ##########
+--- Text shapes ---
+* ID Card Insert: Impact on Call Rates
+* Mandatory insert clients vs. carve-out (no insert) clients
+* RESULTS SUMMARY
+* Clients who received a mandatory insert showed a significantly higher call rate than clients without.
+* 0.86%
+* Mandatory Insert | 1,704 incr. calls / 197,532 mailed
+* 0.63%
+* Carve-Out (No Insert) | 7,197 incr. calls / 1,139,155 mailed
+* Key Takeaways | Mandatory inserts drove 37% more incremental calls per member mailed vs. carve-outs | Result is statistically significant (p &lt; 0.0001) — extremely unlikely due to chance | Methodology: weighted average (total calls ÷ total mail count per group) gives every member equal weight | Caveat: observational, not randomized. Describes a strong association; unmeasured confounders cannot be ruled out
+
+########## SLIDE 19 ##########
+--- Text shapes ---
+* M-DCPS – Internal vs External Comms
+* 28-day pre/post comparison of call volume by communication type
+* Internal sends avg ~80%+ lift vs ~50% for external — Lantern consistently outperforms
+* Lantern Internal Sends
+* M-DCPS External Sends
+* ID Card (1/21)    43 → 126 calls    +193% | Savings Mailer (8/7)    45 → 81 calls    +80% | Quality Mailer (10/15)    64 → 99 calls    +55% * | Spouse Savings (11/26)    83 → 71 calls    -14% *
+* Summer Postcard (6/3)    40 → 67 calls    +68% | Benefits Postcard (7/8)    62 → 40 calls    -35% * | Sept Newsletter (9/2)    60 → 86 calls    +43% * | Lantern Email (9/3)    68 → 73 calls    +7% *
+* Key Takeaways | Cleanest data: ID Card (+193%), Savings Mailer (+80%), Summer Postcard (+68%) — no overlap issues | Asterisked (*) results have overlapping pre/post periods — negative results likely reflect inflated baselines, not true declines
+
+########## SLIDE 20 ##########
+--- Text shapes ---
+* MSK S3 and BAR S2 Direct Mail Results
+* Added a single direct-mail letter to existing email + outbound call journeys for TMO MSK Series 3 and BAR Series 2
+* Test period: Aug 2025 – Mar 2026
+* Pre-test: Apr – Jul 2025
+* Designed as directional (not stat. sig.)
+* BAR Series 2
+* 16%  →  18%  call rate
+* Pre: 17/104   Post: 6/33  — +2%
+* Cost of letter: $2.69/letter ($88.90 total for test sends) | Revenue driven (@ $1.2k/call): $7,111 | Recommendation: Letter should become standard part of the TMO member journey.
+* MSK Series 3
+* 23%  →  29%  call rate
+* Pre: 117/509   Post: 179/623  — +6%
+* Cost of letter: $2.69/letter ($1,678 total for test sends) | Revenue driven (@ $1.2k/call): $213,122 | Recommendation: Letter should become standard part of the TMO member journey.
+* Note: Cost assumes amsive's qty 1,000 price. Revenue assumes $1.2k per call. Directional only — not statistically significant.
+
+########## SLIDE 21 ##########
+--- Text shapes ---
+* Confidential and Proprietary   |   21
+* Spouse Mailer Directional Results
+* METHODOLOGY NOTE
+* 30d pre-period contaminated by Q1 ID Card send. Instead: 28-day post-mailer window vs. 29d+ settled baseline (avoids inflated pre-period) for call counts. 4 clients excluded (inflated carry-over activity). n = 155 clients.
+* +9.43% | Call Volume Lift (28d window) | Average 2.32 calls per day, compared to 2.12 in baseline | 81% of clients: higher call rate vs. baseline | Median: +0.24 calls/client/day
+* +7.3 ppt | Spouse Share Increase | 17% → 24% of inbound calls from spouses in pre-period vs. post-mailer period | 63% of clients saw spouse share rise
+* 126 / 155 | Clients with Higher Call Rate | 81% directional positive (vs. 17% negative) | Median client-level change: +4.4 ppt spouse share
+* WHY THE SPOUSE SHARE SIGNAL MATTERS
+* Controls for prior mailer effect: if the ID card mailer drove calls, total volume rises but spouse/self mix stays flat. | Spouse share specifically increased — direct signal the mailer reached its intended audience. | Broad-based result (63% of clients) — not skewed by 1–2 large clients.
+* CAVEATS
+* Pre/post volume comparison excluded — prior mailer inflation makes pre-period unreliable. | 29d+ baseline is only 21–23 days per client — results will sharpen as more time accumulates. | Covers mailers sent through March 6, 2026; later sends excluded (insufficient post-period). | ELPASOCO, RRISD, BREVARDCOUNTY, Brevard — 29d+ avg rates 10–40x their 28d rates, driven by concurrent OE activity, not mailer response
+* Bottom Line:  Spouse mailer performed on both dimensions — call volume up +9.6% (81% of clients) and spouse share up +7.3 ppt (63% of clients). Results are directional; baseline will mature over coming weeks.
+
+########## SLIDE 22 ##########
+--- Text shapes ---
+* Confidential and Proprietary   |   22
+* Email A/B Test Results  |  Subject Line Testing · 4 Campaigns
+* Control vs. Variant subject lines — all 4 variants outperformed control on open rate
+* PERSONALIZATION | 3 of 4 tests | used first name in subject line
+* AVG. OPEN RATE LIFT | +0.65pp | avg. across all 4 campaigns
+* TOP PERFORMER | BAR 1.3 · +3.8% | first name lift: 36.39% → 37.78%
+* All 4 variants outperformed control  ·  First-name personalization and urgency framing are clear drivers of engagement
+* ▲ = Variant
+--- Table 1 ---
+Campaign | Subject Line | Sends | Opens | Open Rate | Lift
+BAR 1.4 | Get Matched with the Best Surgeon for You | 17,964 | 3,212 | 17.88% | Control
+BAR 1.4 ▲ | [First Name], Get Matched with the Best Surgeon for You | 18,270 | 3,316 | 18.15% | +0.27pp (+1.5%)
+ |  |  |  |  | 
+BAR 1.3 | See Who's in Your Corner | 19,046 | 6,930 | 36.39% | Control
+BAR 1.3 ▲ | [First Name], See Who's in Your Corner | 18,978 | 7,170 | 37.78% | +1.39pp (+3.8%)
+ |  |  |  |  | 
+MSK 1.3 | Joint or back pain? Your Care Advocate is here | 42,949 | 6,932 | 16.14% | Control
+MSK 1.3 ▲ | ⏰ Back &amp; Joint Relief Awaits – Call Lantern Today! | 43,358 | 7,148 | 16.49% | +0.35pp (+2.2%)
+ |  |  |  |  | 
+MSK 2.2 | Pay little-to-no cost for excellent care | 27,968 | 5,266 | 18.83% | Control
+MSK 1.3 ▲ | [First Name], Pay $0 for excellent care | 28,003 | 5,432 | 19.40% | +0.57pp (+3.0%)
+
+########## SLIDE 23 ##########
+--- Text shapes ---
+* Winsupply: Magnet Mailer Performance Summary
+* CAMPAIGN OVERVIEW  |  DEPLOYED APRIL 25, 2026
+* MEMBERS MAILED | 5,911
+* FIRST CALLS | 9 → 32 | Baseline → Test
+* NEW CASES | 7 → 15 | Baseline → Test
+* FUNNEL PERFORMANCE  |  BASELINE vs. TEST GROUP
+* KEY TAKEAWAY  The Winsupply magnet mailer drove a +255.6% lift in first calls (9 → 32) and a +114.3% lift in new cases (7 → 15) vs. the baseline group — strong positive results across both tracked funnel metrics.
+* Winsupply Magnet Mailer Performance Summary
+--- Table 1 ---
+METRIC | BASELINE | TEST GROUP | CHANGE | % CHANGE
+First Calls | 9 | 32 | +23 | +255.6%
+New Cases | 7 | 15 | +8 | +114.3%
+Consults | 4 | 9 | +5 | +125.0%
+Surgeries | 2 | 1 | -1 | -50.0%
+Completed Procedures | 0 | 0 | 0 | —
