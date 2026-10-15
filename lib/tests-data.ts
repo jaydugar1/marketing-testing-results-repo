@@ -437,4 +437,39 @@ export const testResults: TestResult[] = [
       'Post-mailer assessment window',
     ],
   },
+
+  {
+    id: 'paid-digital-top-20',
+    name: 'Top 20 Paid Ad Campaign',
+    channel: 'paid-digital',
+    description: 'Targeted paid ads campaign outperforming control across all metrics',
+    testDate: '2026-Q2',
+    controlSize: 78000,
+    controlOutcome: 1560,
+    variantSize: 88000,
+    variantOutcome: 2485,
+    liftPercentage: 59.3,
+    liftAbsolute: '+59.3% relative lift',
+    confidenceLevel: 99,
+    pValue: 0.0005,
+    metrics: [
+      { name: 'ROAS (Test Group)', value: '$4.50-$7.25' },
+      { name: 'Incremental Revenue', value: '$211k-$305k' },
+      { name: 'ROI Range', value: '327%-607%' },
+      { name: 'Call Rate Lift', value: '+59.3%' },
+      { name: 'Case Rate Lift', value: '+61.2%' },
+    ],
+    controlDescription: 'Control group (no paid ads)',
+    variantDescription: 'Test group (targeted paid ads campaign)',
+    details:
+      'Test group consistently outperformed control across calls and cases, reinforcing findings from prior campaign (Test 1). Results achieved despite structural disadvantages, including mailer delays that front-loaded spend before mailers arrived and audience-related errors. Trendline analysis and incremental volume assessments confirm strong, consistent performance.',
+    recommendation:
+      'Continued investment in targeted paid ads campaigns is strongly warranted. Exceptional ROI range (327%-607%) demonstrates robust performance even under challenging operational conditions. Consider scaling investment based on positive outcomes.',
+    caveats: [
+      'Upper bound assumes all observed lift from paid ads',
+      'Lower bound (327% ROI) accounts for up to 76-85% noise attribution',
+      'Results achieved despite structural disadvantages',
+      'Mailer timing and audience errors did not prevent positive lift',
+    ],
+  },
 ];
