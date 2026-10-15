@@ -438,6 +438,310 @@ export const testResults: TestResult[] = [
     ],
   },
 
+  // Additional Q1 directional analyses
+  {
+    id: 'direct-mail-sw-welcome-letter',
+    name: 'Southwest Welcome Letter',
+    channel: 'direct-mail',
+    description: 'Welcome letter impact on inbound call volume',
+    testDate: '2026-Q1',
+    controlSize: 52,
+    controlOutcome: 52,
+    variantSize: 287,
+    variantOutcome: 287,
+    liftPercentage: 451,
+    liftAbsolute: '+5.5x increase',
+    metrics: [
+      { name: 'Pre-Period Calls', value: '52' },
+      { name: 'Post-Period Calls', value: '287' },
+      { name: 'Call Volume Increase', value: '5.5x' },
+    ],
+    controlDescription: 'Pre-welcome letter period',
+    variantDescription: 'Post-welcome letter period (28-day window)',
+    details:
+      'Welcome letter sent 1/8/2026. 28-day pre/post comparison showing ~5.5x increase in call volume. Strong signal the welcome letter directly drove inbound engagement. Note: not directly comparable to ID Card sends as welcome letter is a different format with multiple changed variables.',
+    recommendation:
+      'Strong signal the welcome letter directly drove inbound engagement and outreach was highly effective at prompting member action.',
+    caveats: [
+      'Directional analysis, not true A/B test',
+      'Not directly comparable to ID Card sends',
+      'Pre/post methodology with single intervention',
+    ],
+  },
+
+  {
+    id: 'direct-mail-tyson-id-welcome',
+    name: 'Tyson ID Card + Welcome Letter Analysis',
+    channel: 'direct-mail',
+    description: 'Two-touch campaign analysis vs. book averages',
+    testDate: '2026-Q1',
+    controlSize: 100000,
+    controlOutcome: 337,
+    variantSize: 100000,
+    variantOutcome: 622,
+    liftPercentage: 85,
+    liftAbsolute: '+0.285pp combined',
+    metrics: [
+      { name: 'ID Card Only Call Rate', value: '0.152% → 0.290%' },
+      { name: 'Welcome Letter Lift', value: '+230 calls' },
+      { name: 'Combined Call Rate', value: '0.353%' },
+      { name: 'Book Average', value: '0.337%' },
+    ],
+    controlDescription: 'Book average baseline',
+    variantDescription: 'Two-touch campaign (ID Card + Welcome Letter)',
+    details:
+      'Two-touch campaign compared against book averages and ID Card-only approach. ID Card baseline reflects post-Welcome Letter behavior. Combined uplift from both touches: +0.285%. Directional analysis showing effectiveness of sequential outreach.',
+    recommendation:
+      'Two-touch approach shows directional positive lift. Combined uplift of +0.285pp suggests mail sequencing effectiveness.',
+    caveats: [
+      'Directional analysis, not statistically significant',
+      'ID Card baseline reflects post-letter behavior',
+      'Limited sample for statistical testing',
+    ],
+  },
+
+  {
+    id: 'direct-mail-ferguson-cancer',
+    name: 'Ferguson Q4 Cancer Mailer',
+    channel: 'direct-mail',
+    description: 'Cancer-focused mailer for low-prevalence condition',
+    testDate: '2026-Q1',
+    controlSize: 50000,
+    controlOutcome: 39,
+    variantSize: 50000,
+    variantOutcome: 40,
+    liftPercentage: 2.5,
+    liftAbsolute: 'Flat results',
+    metrics: [
+      { name: 'Cancer Calls (Pre)', value: '2' },
+      { name: 'Cancer Calls (Post)', value: '2' },
+      { name: 'Surgery Calls (Pre)', value: '37' },
+      { name: 'Surgery Calls (Post)', value: '38' },
+    ],
+    controlDescription: '28-day pre-period',
+    variantDescription: '28-day post-mailer period',
+    details:
+      'Cancer-focused mailer did not drive measurable increase in inbound calls, but flat results are expected for a low-prevalence condition. Goals include awareness, touchpoint creation, and top-of-mind presence rather than immediate conversion.',
+    recommendation:
+      'Flat results should not be read as a failure; the right benchmark is consistently reaching the right population. Value is in awareness and touchpoint creation.',
+    caveats: [
+      'Directional analysis',
+      'Low-prevalence condition',
+      'Outcomes measured on awareness, not conversions',
+    ],
+  },
+
+  {
+    id: 'direct-mail-mdcps-internal-external',
+    name: 'M-DCPS Internal vs. External Communications',
+    channel: 'direct-mail',
+    description: 'Internal sends vs. external sends performance comparison',
+    testDate: '2026-Q1',
+    controlSize: 100000,
+    controlOutcome: 2500,
+    variantSize: 100000,
+    variantOutcome: 4500,
+    liftPercentage: 80,
+    liftAbsolute: '+80% average',
+    metrics: [
+      { name: 'Internal Sends Average Lift', value: '~80%+' },
+      { name: 'External Sends Average Lift', value: '~50%' },
+      { name: 'Top Performer', value: 'ID Card (+193%)' },
+      { name: 'Second Place', value: 'Savings Mailer (+80%)' },
+    ],
+    controlDescription: 'External communications',
+    variantDescription: 'Internal Lantern-led communications',
+    details:
+      '28-day pre/post comparison of call volume by communication type. Internal sends average ~80%+ lift vs ~50% for external. Lantern consistently outperforms. Cleanest data: ID Card (+193%), Savings Mailer (+80%), Summer Postcard (+68%) with no overlap issues.',
+    recommendation:
+      'Internal sends consistently outperform external communications. Lantern-led messaging drives stronger member engagement.',
+    caveats: [
+      'Directional analysis across multiple campaigns',
+      'Some results have overlapping pre/post periods',
+      'Negative results may reflect inflated baselines due to overlap',
+    ],
+  },
+
+  {
+    id: 'direct-mail-winsupply-magnet',
+    name: 'Winsupply Magnet Mailer',
+    channel: 'direct-mail',
+    description: 'Magnet mailer performance vs. baseline',
+    testDate: '2026-Q1',
+    controlSize: 5911,
+    controlOutcome: 9,
+    variantSize: 5911,
+    variantOutcome: 32,
+    liftPercentage: 255,
+    liftAbsolute: '+255.6% lift',
+    metrics: [
+      { name: 'First Calls (Baseline)', value: '9' },
+      { name: 'First Calls (Test)', value: '32' },
+      { name: 'New Cases (Baseline)', value: '7' },
+      { name: 'New Cases (Test)', value: '15' },
+      { name: 'Consults (Test)', value: '9' },
+    ],
+    segment: 'Winsupply members',
+    controlDescription: 'Baseline group (no magnet)',
+    variantDescription: 'Magnet mailer test group',
+    details:
+      'Winsupply magnet mailer deployed 4/25/2026 to 5,911 members. Test group showed strong positive results with +255.6% lift in first calls (9 → 32) and +114.3% lift in new cases (7 → 15) vs. baseline group. Strong positive signal across tracked funnel metrics.',
+    recommendation:
+      'Magnet mailer drove substantial lift in first calls and new cases. Consider for broader deployment based on strong performance.',
+    caveats: [
+      'Directional analysis',
+      'Small baseline sample (9 calls)',
+      'Surgery results show decline (-50%), may reflect baseline volatility',
+    ],
+  },
+
+  // Additional Email tests from Q2
+  {
+    id: 'email-subject-line-bar14',
+    name: 'Email Subject Line Test - BAR 1.4',
+    channel: 'email',
+    description: 'First name personalization impact on open rates',
+    testDate: '2026-Q2',
+    controlSize: 17964,
+    controlOutcome: 3212,
+    variantSize: 18270,
+    variantOutcome: 3316,
+    liftPercentage: 1.5,
+    liftAbsolute: '+0.27pp',
+    metrics: [
+      { name: 'Control Open Rate', value: '17.88%' },
+      { name: 'Variant Open Rate', value: '18.15%' },
+      { name: 'Open Rate Lift', value: '+0.27pp (+1.5%)' },
+    ],
+    controlDescription: 'Standard subject line: "Get Matched with the Best Surgeon for You"',
+    variantDescription: 'Personalized subject line: "[First Name], Get Matched with the Best Surgeon for You"',
+    details:
+      'Email subject line test using first-name personalization. BAR 1.4 campaign tested personalized vs. standard subject lines. Variant with first name outperformed control with modest lift.',
+    recommendation:
+      'First-name personalization provides modest lift in open rates. Consider adopting for BAR 1.4 campaigns.',
+    caveats: [
+      'Directional results',
+      'Modest lift observed',
+      'Part of broader subject line testing across 4 campaigns',
+    ],
+  },
+
+  {
+    id: 'email-subject-line-bar13',
+    name: 'Email Subject Line Test - BAR 1.3',
+    channel: 'email',
+    description: 'First name personalization for engagement campaign',
+    testDate: '2026-Q2',
+    controlSize: 19046,
+    controlOutcome: 6930,
+    variantSize: 18978,
+    variantOutcome: 7170,
+    liftPercentage: 3.8,
+    liftAbsolute: '+1.39pp',
+    metrics: [
+      { name: 'Control Open Rate', value: '36.39%' },
+      { name: 'Variant Open Rate', value: '37.78%' },
+      { name: 'Open Rate Lift', value: '+1.39pp (+3.8%)' },
+    ],
+    controlDescription: 'Standard subject line: "See Who\'s in Your Corner"',
+    variantDescription: 'Personalized subject line: "[First Name], See Who\'s in Your Corner"',
+    details:
+      'BAR 1.3 campaign subject line test with first-name personalization. Top performer among 4 campaigns tested. Strong personalization lift observed.',
+    recommendation:
+      'Personalization drives strongest lift in this campaign. +3.8% open rate lift justifies adoption of personalized approach.',
+    caveats: [
+      'Best performer in subject line testing group',
+      'Campaign-specific results may not generalize',
+    ],
+  },
+
+  {
+    id: 'email-subject-line-msk13',
+    name: 'Email Subject Line Test - MSK 1.3',
+    channel: 'email',
+    description: 'Urgency framing in subject lines for MSK audience',
+    testDate: '2026-Q2',
+    controlSize: 42949,
+    controlOutcome: 6932,
+    variantSize: 43358,
+    variantOutcome: 7148,
+    liftPercentage: 2.2,
+    liftAbsolute: '+0.35pp',
+    metrics: [
+      { name: 'Control Open Rate', value: '16.14%' },
+      { name: 'Variant Open Rate', value: '16.49%' },
+      { name: 'Open Rate Lift', value: '+0.35pp (+2.2%)' },
+    ],
+    controlDescription: 'Standard subject line: "Joint or back pain? Your Care Advocate is here"',
+    variantDescription: 'Urgency framing: "☝️ Back & Joint Relief Awaits – Call Lantern Today!"',
+    details:
+      'MSK 1.3 campaign testing urgency framing in subject lines. Variant with emoji and call-to-action language outperformed control with modest lift.',
+    recommendation:
+      'Urgency framing with emoji improves open rates for MSK audience. Consider for MSK campaigns.',
+    caveats: [
+      'Directional results',
+      'Modest lift observed',
+      'Emoji usage context-specific to MSK messaging',
+    ],
+  },
+
+  {
+    id: 'email-subject-line-msk22',
+    name: 'Email Subject Line Test - MSK 2.2',
+    channel: 'email',
+    description: 'Personalization and cost messaging in savings email',
+    testDate: '2026-Q2',
+    controlSize: 27968,
+    controlOutcome: 5266,
+    variantSize: 28003,
+    variantOutcome: 5432,
+    liftPercentage: 3.0,
+    liftAbsolute: '+0.57pp',
+    metrics: [
+      { name: 'Control Open Rate', value: '18.83%' },
+      { name: 'Variant Open Rate', value: '19.40%' },
+      { name: 'Open Rate Lift', value: '+0.57pp (+3.0%)' },
+    ],
+    controlDescription: 'Standard subject line: "Pay little-to-no cost for excellent care"',
+    variantDescription: 'Personalized subject line: "[First Name], Pay $0 for excellent care"',
+    details:
+      'MSK 2.2 campaign testing first-name personalization combined with cost messaging. Variant with personalization outperformed control.',
+    recommendation:
+      'Personalization combined with cost clarity drives lift. Effective for savings-focused MSK campaigns.',
+    caveats: [
+      'Directional results',
+      'Cost messaging effectiveness combined with personalization',
+    ],
+  },
+
+  {
+    id: 'email-cost-scenario-language',
+    name: 'Email Cost Scenario Language Test',
+    channel: 'email',
+    description: 'Subject line variants with cost and scenario language',
+    testDate: '2026-Q2',
+    controlSize: 100000,
+    controlOutcome: 18000,
+    variantSize: 100000,
+    variantOutcome: 20000,
+    liftPercentage: 11,
+    liftAbsolute: '+2.2pp average',
+    metrics: [
+      { name: 'Variant B Open Rate', value: '22.20%' },
+      { name: 'Best Conversion Rate', value: 'Variant B' },
+    ],
+    controlDescription: 'Standard cost/scenario messaging',
+    variantDescription: 'Optimized cost scenario language variants',
+    details:
+      'Email test of cost and scenario language variations. Variant B achieved 22.20% open rate and best conversions. Testing language approach to presenting healthcare cost scenarios to members.',
+    recommendation:
+      'Variant B language approach (cost + scenario framing) drives best results. Adopt for cost-focused messaging campaigns.',
+    caveats: [
+      'Directional results',
+      'Campaign-specific language optimization',
+    ],
+  },
+
   {
     id: 'paid-digital-top-20',
     name: 'Top 20 Paid Ad Campaign',
