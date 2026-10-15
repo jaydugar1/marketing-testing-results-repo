@@ -1,5 +1,6 @@
 'use client';
 
+import { useState } from 'react';
 import Link from 'next/link';
 
 interface PresentationPageProps {
@@ -7,7 +8,7 @@ interface PresentationPageProps {
 }
 
 export default function PresentationPage({ params: paramsPromise }: PresentationPageProps) {
-  const [id, setId] = require('react').useState<string | null>(null);
+  const [id, setId] = useState<string | null>(null);
 
   if (!id) {
     paramsPromise.then((p) => setId(p.id));

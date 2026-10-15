@@ -14,10 +14,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body style={{ backgroundColor: 'var(--bg-primary)', color: 'var(--fg-primary)' }} className="font-sans">
-        <div className="min-h-screen flex flex-col">
+      <body style={{ backgroundColor: 'var(--bg-primary)', color: 'var(--fg-primary)', fontFamily: 'var(--font-body)' }}>
+        <div style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
           {/* Sticky Header */}
-          <header style={{ backgroundColor: 'var(--color-white)', borderBottom: '1px solid var(--border-light)' }} className="sticky top-0 z-40">
+          <header style={{ backgroundColor: 'var(--color-white)', borderBottom: '1px solid var(--border-light)', position: 'sticky', top: 0, zIndex: 40 }}>
             <div style={{ maxWidth: '1280px', marginLeft: 'auto', marginRight: 'auto', paddingLeft: '32px', paddingRight: '32px', paddingTop: '16px', paddingBottom: '16px' }}>
               <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '32px' }}>
                 {/* Logo and Title */}
@@ -80,7 +80,7 @@ export default function RootLayout({
           </header>
 
           {/* Page Content */}
-          <main className="flex-1">
+          <main style={{ flex: 1 }}>
             <div style={{ maxWidth: '1280px', marginLeft: 'auto', marginRight: 'auto', paddingLeft: '32px', paddingRight: '32px' }}>
               {children}
             </div>
