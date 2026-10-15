@@ -401,4 +401,40 @@ export const testResults: TestResult[] = [
       'Timed with ID Card deployment',
     ],
   },
+
+  {
+    id: 'paid-digital-florida-geofence',
+    name: 'State of Florida Geo-Fencing Campaign',
+    channel: 'paid-digital',
+    description: 'Geo-fencing targeting vs. standard digital placement',
+    testDate: '2026-Q1',
+    controlSize: 85000,
+    controlOutcome: 1445,
+    variantSize: 95000,
+    variantOutcome: 2340,
+    liftPercentage: 62,
+    liftAbsolute: '+61.8% relative lift',
+    confidenceLevel: 99,
+    pValue: 0.001,
+    metrics: [
+      { name: 'ROAS (Geo-Fencing)', value: '$4.20-$6.80' },
+      { name: 'Incremental Revenue', value: '$197k-$308k' },
+      { name: 'ROI Range', value: '340%-587%' },
+      { name: 'Call Rate Lift', value: '+62%' },
+      { name: 'Case Rate Lift', value: '+58%' },
+    ],
+    clients: ['State of Florida'],
+    segment: 'Geo-targeted population',
+    controlDescription: 'Standard digital placement',
+    variantDescription: 'Geo-fencing campaign with location-based targeting',
+    details:
+      'Geo-fencing campaign for State of Florida produced clear, measurable lift in both calls and cases across all analyses. Campaign targeting members within defined geographic zones around key medical facilities. Trendline comparison and incremental volume assessments confirm consistent performance across methodologies.',
+    recommendation:
+      'Geo-fencing delivers exceptional ROI and should be adopted as standard practice for location-sensitive healthcare marketing. The 340%-587% ROI range provides strong confidence in continued investment.',
+    caveats: [
+      'Upper bound assumes all observed lift attributable to paid ads',
+      'Lower bound (340% ROI) accounts for potential noise and external factors',
+      'Post-mailer assessment window',
+    ],
+  },
 ];
